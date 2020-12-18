@@ -56,11 +56,9 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\tr\HandyControl.reso
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\ColorStyles.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\GeometryStyles\LettersAndNumbers.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\SolidColorBrushStyles.baml
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\MainWindow.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\App.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Wp.WpfDemo.UIL_MarkupCompile.cache
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Wp.WpfDemo.UIL_MarkupCompile.lref
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\MainWindow.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\BorderStyles.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\PageStyles.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\ScrollBarStyles.baml
@@ -85,3 +83,10 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\DataGridStyle
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\SwitchToggleButtonStyles.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\TreeViewStyles.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\WindowStyles.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Pages\ContactUsPage.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Pages\HomePage.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Windows\MainWindow.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\App.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Pages\ContactUsPage.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Pages\HomePage.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Windows\MainWindow.baml

@@ -1,0 +1,17 @@
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\Wp.WpfDemo.Model.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\Wp.WpfDemo.Model.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\CommonServiceLocator.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\System.Windows.Interactivity.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.csproj.CoreCompileInputs.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.csproj.CopyComplete
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.pdb

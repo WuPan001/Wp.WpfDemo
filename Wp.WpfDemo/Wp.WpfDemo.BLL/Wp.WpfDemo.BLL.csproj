@@ -43,6 +43,8 @@
     <Reference Include="Pipelines.Sockets.Unofficial, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42ea0a778e13fbe2, processorArchitecture=MSIL">
       <HintPath>..\packages\Pipelines.Sockets.Unofficial.2.1.16\lib\net472\Pipelines.Sockets.Unofficial.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="StackExchange.Redis, Version=2.0.0.0, Culture=neutral, PublicKeyToken=c219ff1ca8c2ce46, processorArchitecture=MSIL">
       <HintPath>..\packages\StackExchange.Redis.2.1.58\lib\net472\StackExchange.Redis.dll</HintPath>
     </Reference>
@@ -93,6 +95,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converters\ControlVisibilityConverters\ToTopperVisibilityConverter.cs" />
+    <Compile Include="Converters\MsgConverters\IconConverter.cs" />
+    <Compile Include="Converters\MsgConverters\TitleConverter.cs" />
+    <Compile Include="Converters\NavigationConverters\NavigationHeadConverter.cs" />
+    <Compile Include="Converters\NavigationConverters\NavigationIconConverter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -102,8 +109,12 @@
     </None>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Converters\" />
+    <ProjectReference Include="..\Wp.WpfDemo.Model\Wp.WpfDemo.Model.csproj">
+      <Project>{bcc6ab90-f3d4-4ef5-86ee-6d9b5eea6d2f}</Project>
+      <Name>Wp.WpfDemo.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

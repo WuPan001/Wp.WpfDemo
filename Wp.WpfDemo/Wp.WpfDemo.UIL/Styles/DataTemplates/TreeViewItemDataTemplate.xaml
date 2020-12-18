@@ -27,7 +27,6 @@
 					   Style="{Binding Path=Tag  ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource iconConverter }}" />
 			<TextBlock Grid.Column="1"
 					   Style="{StaticResource  TreeViewItemHeadTextBlockStyle}"
-					   FontFamily="{StaticResource JiangChengYuanTi}"
 					   Text="{Binding Path=Tag ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource headConverter}}" />
 		</Grid>
 	</DataTemplate>

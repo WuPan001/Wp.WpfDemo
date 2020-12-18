@@ -6,8 +6,6 @@
 	</ResourceDictionary.MergedDictionaries>
 	<Style x:Key="BorderStyleBase"
 		   TargetType="Border">
-		<Setter Property="BorderBrush"
-				Value="{StaticResource Primary500SolidColorBrushStyle}" />
 		<Setter Property="BorderThickness"
 				Value="1" />
 		<Setter Property="CornerRadius"
@@ -16,6 +14,8 @@
 	<Style x:Key="PageBorderStyle"
 		   TargetType="Border"
 		   BasedOn="{StaticResource BorderStyleBase}">
+		<Setter Property="BorderBrush"
+				Value="White" />
 		<Setter Property="Margin"
 				Value="10" />
 		<Setter Property="Background"

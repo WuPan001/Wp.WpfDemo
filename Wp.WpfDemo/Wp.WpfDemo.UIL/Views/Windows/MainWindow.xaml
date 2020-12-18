@@ -1,12 +1,244 @@
 ﻿<Window x:Class="Wp.WpfDemo.UIL.Views.Windows.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Windows"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+		xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+		xmlns:hc="https://handyorg.github.io/handycontrol"
+		xmlns:converter="clr-namespace:Wp.WpfDemo.UIL.Converters"
+		xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.ViewModels.Windows"
+		xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Windows"
+		mc:Ignorable="d"
+		Title="MainWindow"
+		Height="1080"
+		Width="1920"
+		WindowStartupLocation="CenterScreen"
+		WindowState="Maximized"
+		Style="{DynamicResource WindowStyle}">
+	<Window.DataContext>
+		<vm:MainWindowVM />
+	</Window.DataContext>
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Styles/IconFontStyles/WindowTextBlockStyles.xaml" />
+				<ResourceDictionary Source="/Styles/DataTemplates/TreeViewItemDataTemplate.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+			<Style x:Key="DividerStyle"
+				   TargetType="{x:Type hc:Divider}"
+				   BasedOn="{StaticResource DividerBaseStyle}">
+				<Setter Property="Width"
+						Value="240" />
+				<Setter Property="Foreground"
+						Value="{StaticResource Primary500SolidColorBrushStyle}" />
+				<Setter Property="FontSize"
+						Value="20" />
+				<Setter Property="HorizontalAlignment"
+						Value="Center" />
+			</Style>
+			<converter:FrameContentConverter x:Key="FrameContentConverter" />
+		</ResourceDictionary>
+	</Window.Resources>
+	<Viewbox Stretch="Fill">
+		<materialDesign:DrawerHost HorizontalAlignment="Center"
+								   VerticalAlignment="Center">
+			<Grid>
+				<Grid Height="1080"
+					  Width="1920">
+					<Grid Height="1080"
+						  Width="1920">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="64" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="250" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid Grid.Row="0"
+							  Grid.Column="0"
+							  Background="{StaticResource Primary700SolidColorBrushStyle}">
+							<TextBlock Text="WPF"
+									   Style="{StaticResource SecondaryTextBlockStyle}"
+									   Foreground="White" />
+						</Grid>
+						<Grid Grid.Row="0"
+							  Grid.Column="1"
+							  Background="{StaticResource Primary600SolidColorBrushStyle}">
+							<Grid.ColumnDefinitions>
+								<ColumnDefinition Width="20" />
+								<ColumnDefinition Width="*" />
+								<ColumnDefinition Width="auto" />
+								<ColumnDefinition Width="10" />
+								<ColumnDefinition Width="25" />
+								<ColumnDefinition Width="25" />
+								<ColumnDefinition Width="25" />
+								<ColumnDefinition Width="36" />
+							</Grid.ColumnDefinitions>
+							<TextBlock Grid.Column="1"
+									   Text="Title"
+									   Style="{StaticResource PrimaryTextBlockStyle}"
+									   Foreground="White"
+									   HorizontalAlignment="Left" />
+							<Button Grid.Column="2"
+									Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+									materialDesign:ShadowAssist.ShadowDepth="Depth0"
+									Background="White"
+									BorderBrush="White"
+									Foreground="{StaticResource Primary500SolidColorBrushStyle}"
+									FontSize="26"
+									Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+									CommandParameter="{x:Static Dock.Left}"
+									Content="{Binding CurrentUserInfo.Name[0]}">
+								<Button.ToolTip>
+									<ToolTip>
+										<TextBlock>
+										<Run Text="{Binding CurrentUserInfo.Name}" />
+										<Run Text="    已登录" /></TextBlock>
+									</ToolTip>
+								</Button.ToolTip>
+							</Button>
+							<Grid Grid.Column="4">
+								<TextBlock Style="{StaticResource PrimaryMinTextBlockStyle}"
+										   ToolTip="最小化">
+					<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonUp">
+						<i:InvokeCommandAction Command="{Binding MinCmd}"
+											   CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" />
+					</i:EventTrigger>
+				</i:Interaction.Triggers></TextBlock>
+							</Grid>
+							<Grid Grid.Column="5">
+								<TextBlock Style="{StaticResource PrimaryMaxTextBlockStyle}"
+										   ToolTip="向下还原"><i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonUp">
+						<i:InvokeCommandAction Command="{Binding ReductionCmd}"
+											   CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" />
+					</i:EventTrigger>
+				</i:Interaction.Triggers></TextBlock>
+							</Grid>
+							<Grid Grid.Column="6">
+								<TextBlock Style="{StaticResource PrimaryCloseTextBlockStyle}"
+										   ToolTip="退出">
+					<i:Interaction.Triggers>
+					<i:EventTrigger EventName="MouseLeftButtonUp">
+						<i:InvokeCommandAction Command="{Binding CloseCmd}"
+											   CommandParameter="{Binding RelativeSource={RelativeSource AncestorType={x:Type Window}}}" />
+					</i:EventTrigger>
+				</i:Interaction.Triggers></TextBlock>
+							</Grid>
+						</Grid>
+						<Grid Grid.Row="1"
+							  Grid.Column="0"
+							  Background="{StaticResource Assist700SolidColorBrushStyle}">
+							<TreeView x:Name="NavigationTree"
+									  HorizontalAlignment="Stretch"
+									  VerticalAlignment="Stretch"
+									  Background="Transparent"
+									  FontSize="18"
+									  Foreground="White"
+									  Padding="0"
+									  BorderThickness="0"
+									  DataContext="{Binding}">
+								<i:Interaction.Triggers>
+									<i:EventTrigger EventName="MouseLeftButtonUp">
+										<i:InvokeCommandAction Command="{Binding NavigationItemClickCmd}"
+															   CommandParameter="{Binding  RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TreeView}},Path=SelectedItem}" />
+									</i:EventTrigger>
+								</i:Interaction.Triggers>
+								<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+											  Tag="{Binding NavigationItems[0]}"
+											  HeaderTemplate="{DynamicResource NavigationDataTemplate}" />
+								<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+											  Tag="{Binding NavigationItems[1]}"
+											  HeaderTemplate="{DynamicResource NavigationDataTemplate}">
+									<!--<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+								  Tag="{Binding NavigationItems[3] }"
+								  HeaderTemplate="{DynamicResource NavigationDataTemplate}" />-->
+								</TreeViewItem>
+							</TreeView>
+						</Grid>
+						<Grid Grid.Row="1"
+							  Grid.Column="1">
+							<Frame Content="{Binding ElementName=NavigationTree,Path=SelectedItem ,Converter={StaticResource FrameContentConverter}}"
+								   HorizontalAlignment="Stretch"
+								   VerticalAlignment="Stretch"
+								   NavigationUIVisibility="Hidden"
+								   Background="{StaticResource Assist300SolidColorBrushStyle}"></Frame>
+						</Grid>
+					</Grid>
+					<ScrollViewer Margin="0 200 0 0"
+								  VerticalScrollBarVisibility="Hidden"
+								  HorizontalAlignment="Right">
+						<StackPanel   hc:Growl.Token="Msg"
+									  VerticalAlignment="Bottom"
+									  Margin="0,10,10,10" />
+					</ScrollViewer>
+				</Grid>
+				<ScrollViewer Margin="0 200 0 0"
+							  VerticalScrollBarVisibility="Hidden"
+							  HorizontalAlignment="Right">
+					<StackPanel   hc:Growl.Token="Msg"
+								  VerticalAlignment="Bottom"
+								  Margin="0,10,10,10" />
+				</ScrollViewer>
+			</Grid>
+			<materialDesign:DrawerHost.LeftDrawerContent>
+				<Grid  Margin="10"
+					   Width="250">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="auto" />
+						<RowDefinition Height="auto" />
+						<RowDefinition Height="*" />
+					</Grid.RowDefinitions>
+					<StackPanel Grid.Row="0"
+								Orientation="Vertical">
+						<hc:Divider Content="当前登录用户"
+									Style="{StaticResource DividerStyle}" />
+						<StackPanel Orientation="Horizontal"
+									Margin=" 20 0 20 0">
+							<ToggleButton VerticalAlignment="Stretch"
+										  HorizontalAlignment="Stretch"
+										  Height="50"
+										  Width="50"
+										  Style="{StaticResource MaterialDesignActionLightToggleButton}"
+										  Background="{StaticResource Primary400SolidColorBrushStyle}"
+										  BorderBrush="{StaticResource Primary400SolidColorBrushStyle}"
+										  BorderThickness="0"
+										  Foreground="White"
+										  FontSize="25"
+										  Content="{Binding CurrentUserInfo.Name[0]}">
+								<!--<materialDesign:ToggleButtonAssist.OnContent>
+									<TextBlock Style="{StaticResource CurrentUserTextBlockStyle}"
+											   Foreground="White"
+											   FontSize="35" />
+								</materialDesign:ToggleButtonAssist.OnContent>-->
+							</ToggleButton>
+							<StackPanel Margin="8 0 0 0"
+										Grid.Column="1">
+								<TextBlock FontWeight="Bold"
+										   FontSize="20"
+										   Foreground="{StaticResource Primary500SolidColorBrushStyle}"
+										   Text="{Binding CurrentUserInfo.Name}" />
+								<TextBlock Text="{Binding CurrentUserInfo.Authority}"
+										   FontSize="18"
+										   Foreground="{StaticResource Primary500SolidColorBrushStyle}"
+										   Opacity="0.68" />
+							</StackPanel>
+						</StackPanel>
+					</StackPanel>
+					<StackPanel Grid.Row="1"
+								Orientation="Vertical">
+						<hc:Divider Content="当前系统时间"
+									Style="{StaticResource DividerStyle}" />
+						<Viewbox Width="200"
+								 Height="70">
+							<hc:FlipClock Background="{StaticResource Primary500SolidColorBrushStyle}" />
+						</Viewbox>
+					</StackPanel>
+				</Grid>
+			</materialDesign:DrawerHost.LeftDrawerContent>
+		</materialDesign:DrawerHost>
+	</Viewbox>
 </Window>

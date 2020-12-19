@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Command;
+using HandyControl.Controls;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -37,6 +38,7 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
         #region 命令
 
         public ICommand NavigationItemClickCmd => new RelayCommand<TreeViewItem>(tv => tv.IsExpanded = !tv.IsExpanded);
+        public ICommand MsgBoxCmd => new RelayCommand(() => { Growl.Success("申请转运车拉走！", "Msg"); });
 
         #endregion 命令
 

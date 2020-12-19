@@ -36,3 +36,6 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\obj\Debug\Wp.WpfDemo.BLL.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\obj\Debug\Wp.WpfDemo.BLL.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\bin\Debug\Wp.WpfDemo.Model.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\bin\Debug\Wp.WpfDemo.Model.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.BLL\bin\Debug\GalaSoft.MvvmLight.xml

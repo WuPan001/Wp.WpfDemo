@@ -57,7 +57,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\AssemblySteperInfo.cs" />
+    <Compile Include="Entities\Assembly\AssemblySteperInfo.cs" />
+    <Compile Include="Entities\Assembly\AssemblySteperItemInfo.cs" />
     <Compile Include="Enums\AssemblyStatus.cs" />
     <Compile Include="Enums\MsgType.cs" />
     <Compile Include="Enums\Navigation.cs" />

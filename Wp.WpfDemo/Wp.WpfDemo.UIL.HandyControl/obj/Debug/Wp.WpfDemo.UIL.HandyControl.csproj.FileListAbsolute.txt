@@ -21,3 +21,5 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\Wp.WpfD
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\Wp.WpfDemo.UIL.HandyControl.csproj.CopyComplete
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\Wp.WpfDemo.UIL.HandyControl.exe
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\Wp.WpfDemo.UIL.HandyControl.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\Wp.WpfDemo.UIL.HandyControl.csprojAssemblyReference.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.HandyControl\obj\Debug\GeneratedInternalTypeHelper.g.cs

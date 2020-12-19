@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Wp.WpfDemo.Model.Enums;
 
-namespace Wp.WpfDemo.Model.Entities
+namespace Wp.WpfDemo.Model.Entities.Assembly
 {
     public class AssemblySteperInfo : ViewModelBase
     {

@@ -6,12 +6,16 @@
 	  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
 	  xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
 	  xmlns:hc="https://handyorg.github.io/handycontrol"
+	  xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.ViewModels.Pages"
 	  xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Pages"
 	  mc:Ignorable="d"
 	  d:DesignHeight="966"
 	  d:DesignWidth="1641"
 	  Style="{DynamicResource  MianWindowPageStyle}"
 	  Title="HomePage">
+	<Page.DataContext>
+		<vm:HomePageVM />
+	</Page.DataContext>
 	<Page.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -19,6 +23,7 @@
 				<ResourceDictionary Source="/Styles/SolidColorBrushStyles.xaml" />
 				<ResourceDictionary Source="/Styles/ColorStyles.xaml" />
 				<ResourceDictionary Source="/Styles/PageStyles.xaml" />
+				<ResourceDictionary Source="/Styles/TextBlockStyles.xaml" />
 				<ResourceDictionary Source="/Styles/BorderStyles.xaml" />
 				<ResourceDictionary Source="/Styles/ScrollBarStyles.xaml" />
 				<ResourceDictionary Source="/Styles/StepBarItemStyles.xaml" />
@@ -79,7 +84,7 @@
 				</Grid.RowDefinitions>
 				<materialDesign:Card Grid.Row="0"
 									 Grid.Column="0"
-									 Margin="0 10 0 0">
+									 Margin="10">
 					<Grid>
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="*" />
@@ -120,12 +125,12 @@
 														</Grid.ColumnDefinitions>
 														<!--<TextBlock Grid.Column="1"
 																   Style="{Binding Status,Converter={StaticResource assemblyStatusTextBlockConverter}}"
-																   ToolTip="{Binding Status ,Converter={StaticResource assemblyStatusToolTipConverter}}" />
+																   ToolTip="{Binding Status ,Converter={StaticResource assemblyStatusToolTipConverter}}" />-->
 														<TextBlock Grid.Column="3"
 																   Text="{Binding RFID}"
 																   Style="{StaticResource PrimaryTextBlockStyle}"
 																   HorizontalAlignment="Stretch"
-																   TextAlignment="Left" />-->
+																   TextAlignment="Left" />
 													</Grid>
 												</Expander.Header>
 												<Grid>
@@ -175,7 +180,9 @@
 														<TextBlock Grid.Column="0"
 																   HorizontalAlignment="Right"
 																   Margin="0,20"
-																   ToolTip="下一步">
+																   ToolTip="下一步"
+																   Text="下一步"
+																   FontSize="20">
 															<!--<TextBlock.Style>
 																<Style TargetType="TextBlock"
 																	   BasedOn="{StaticResource Forward1TextBlockStyle}">
@@ -199,7 +206,7 @@
 															</TextBlock.Style>-->
 													<i:Interaction.Triggers>
 														<i:EventTrigger EventName="MouseLeftButtonUp">
-																<i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor ,AncestorType=Page},Path=DataContext.NextStepCmd}"
+																<i:InvokeCommandAction Command="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Page},Path=DataContext.NextStepCmd}"
 																					   CommandParameter="{Binding ElementName=assemblingSteper}" />
 														</i:EventTrigger>
 													</i:Interaction.Triggers></TextBlock>
@@ -223,15 +230,20 @@
 							<!--<TextBlock Style="{StaticResource FoldTextBlockStyle}"
 									   Foreground="White" />-->
 						</Button>
-						<Button Grid.Row="3"
+						<Button Grid.Row="2"
+								Grid.Column="1"
+								Command="{Binding StepperTestCmd}"></Button>
+						<!--<Button Grid.Row="3"
 								Grid.Column="1"
 								Command="{Binding ScrollViewToTopCmd}"
 								CommandParameter="{Binding ElementName=ResultScrollView}"
 								ToolTip="返回顶部">
-							<!--Visibility="{Binding ElementName=ResultScrollView ,Path=VerticalOffset ,Converter={StaticResource toTopperVisibilityConverter}}"-->
-							<!--<TextBlock Style="{StaticResource ToTopTextBlockStyle}"
+							-->
+						<!--Visibility="{Binding ElementName=ResultScrollView ,Path=VerticalOffset ,Converter={StaticResource toTopperVisibilityConverter}}"-->
+						<!--<TextBlock Style="{StaticResource ToTopTextBlockStyle}"
 									   Foreground="White" />-->
-						</Button>
+						<!--
+						</Button>-->
 					</Grid>
 				</materialDesign:Card>
 			</Grid>

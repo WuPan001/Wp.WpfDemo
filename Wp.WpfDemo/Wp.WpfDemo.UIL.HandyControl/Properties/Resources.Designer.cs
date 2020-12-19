@@ -61,16 +61,6 @@ namespace Wp.WpfDemo.UIL.HandyControl.Properties {
         }
         
         /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
-        internal static byte[] iconfont {
-            get {
-                object obj = ResourceManager.GetObject("iconfont", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         internal static System.Drawing.Bitmap Naruto0 {
@@ -137,26 +127,6 @@ namespace Wp.WpfDemo.UIL.HandyControl.Properties {
             get {
                 object obj = ResourceManager.GetObject("Naruto6", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
-        internal static byte[] Test {
-            get {
-                object obj = ResourceManager.GetObject("Test", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
-        internal static byte[] Trace {
-            get {
-                object obj = ResourceManager.GetObject("Trace", resourceCulture);
-                return ((byte[])(obj));
             }
         }
     }

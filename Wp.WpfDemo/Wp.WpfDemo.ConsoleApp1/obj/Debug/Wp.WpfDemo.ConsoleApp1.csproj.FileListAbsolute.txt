@@ -33,3 +33,5 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\obj\Debug\Wp.WpfDemo.C
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\obj\Debug\Wp.WpfDemo.ConsoleApp1.csproj.CopyComplete
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\obj\Debug\Wp.WpfDemo.ConsoleApp1.exe
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\obj\Debug\Wp.WpfDemo.ConsoleApp1.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\obj\Debug\Wp.WpfDemo.ConsoleApp1.csprojAssemblyReference.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.ConsoleApp1\bin\Debug\NLog.config

@@ -1,0 +1,14 @@
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\bin\Debug\Wp.WpfDemo.UIL.TestLiveChart.exe.config
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\bin\Debug\Wp.WpfDemo.UIL.TestLiveChart.exe
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\bin\Debug\Wp.WpfDemo.UIL.TestLiveChart.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\MainWindow.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\App.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart_MarkupCompile.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart_MarkupCompile.lref
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\MainWindow.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.g.resources
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.Properties.Resources.resources
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.csproj.GenerateResource.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.csproj.CoreCompileInputs.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.exe
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.pdb

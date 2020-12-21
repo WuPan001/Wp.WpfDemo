@@ -11,6 +11,13 @@
 		Width="1920"
 		WindowStartupLocation="CenterScreen"
 		WindowState="Maximized">
+	<Window.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Styles/FlipClock.xaml" />
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</Window.Resources>
 	<Grid>
 		<Grid>
 			<!--<hc:AnimationPath Data="{DynamicResource GithubGeometry}"
@@ -86,7 +93,8 @@
 				</hc:TabItem>
 				<hc:TabItem Header="FlipClock 翻页时钟">
 					<hc:SimplePanel Background="{DynamicResource RegionBrush}">
-						<hc:FlipClock HorizontalAlignment="Center"
+						<hc:FlipClock Style="{StaticResource WpFilpClock}"
+									  HorizontalAlignment="Center"
 									  VerticalAlignment="Center"
 									  Margin="32" />
 					</hc:SimplePanel>

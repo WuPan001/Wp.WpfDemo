@@ -24,3 +24,5 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Views\Windows\Window1.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\App.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Views\Windows\Window1.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Styles\FlipClock.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Styles\FlipNumber.baml

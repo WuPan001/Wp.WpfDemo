@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using LiveCharts;
+using LiveCharts.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -50,6 +51,8 @@ namespace Wp.WpfDemo.UIL.TestLiveChart.ViewModels.Windows
 
         #endregion 统计
 
+        public SeriesCollection SeriesCollection { get; set; }
+
         #region 命令
 
         public ICommand TestCmd => new RelayCommand(() =>
@@ -65,11 +68,22 @@ namespace Wp.WpfDemo.UIL.TestLiveChart.ViewModels.Windows
 
         public Window1VM()
         {
-            UnqualifiedProductCount = new ChartValues<int>() { 12 };
+            UnqualifiedProductCount = new ChartValues<int>() { 15, 20 };
             //UnqualifiedProductCount.Add(12);
-            QualifiedProductCount = new ChartValues<int>() { 33 };
+            QualifiedProductCount = new ChartValues<int>() { 33, 12 };
             //QualifiedProductCount.Add(30);
-            PointLabel = chartPoint => chartPoint.Y.ToString();
+            PointLabel = chartPoint => $"{chartPoint.Y}";
+            SeriesCollection = new SeriesCollection
+            {
+                new LineSeries
+                {
+                    Values = new ChartValues<double> { 3, 5, 7, 4 }
+                },
+                 new ColumnSeries
+                {
+                    Values = new ChartValues<decimal> { 5, 6, 2, 7 }
+                }
+            };
         }
 
         #endregion 方法

@@ -81,12 +81,14 @@
 		</lvc:CartesianChart>
 		<lvc:PieChart Grid.Column="1">
 			<lvc:PieChart.Series>
-				<lvc:PieSeries Title="Test1"
-							   x:Name="Test123"
-							   Values="2" />
+				<lvc:PieSeries  Title="损耗产品总数"
+								Fill="Yellow"
+								Values="{Binding QualifiedProductCount}"
+								DataLabels="True"
+								LabelPoint="{Binding PointLabel}"
+								FontSize="20" />
 				<lvc:PieSeries Title="损耗产品总数"
-							   Fill="Green"
-							   Stroke="Red"
+							   Fill="LightCoral"
 							   Values="{Binding UnqualifiedProductCount}"
 							   DataLabels="True"
 							   LabelPoint="{Binding PointLabel}"
@@ -94,7 +96,25 @@
 			</lvc:PieChart.Series>
 			<lvc:PieChart.LegendLocation>bottom</lvc:PieChart.LegendLocation>
 		</lvc:PieChart>
-		<!--<lvc:CartesianChart Grid.Column="2"
-							Series="{Binding SeriesCollection}" />-->
+		<lvc:CartesianChart Grid.Column="2"
+							Series="{Binding SeriesCollection}" />
+		<lvc:PieChart Grid.Column="3"
+					  InnerRadius="50">
+			<lvc:PieChart.Series>
+				<lvc:PieSeries  Title="损耗产品总数"
+								Fill="Yellow"
+								Values="{Binding QualifiedProductCount}"
+								DataLabels="True"
+								LabelPoint="{Binding PointLabel}"
+								FontSize="20" />
+				<lvc:PieSeries Title="损耗产品总数"
+							   Fill="LightCoral"
+							   Values="{Binding UnqualifiedProductCount}"
+							   DataLabels="True"
+							   LabelPoint="{Binding PointLabel}"
+							   FontSize="20" />
+			</lvc:PieChart.Series>
+			<lvc:PieChart.LegendLocation>bottom</lvc:PieChart.LegendLocation>
+		</lvc:PieChart>
 	</Grid>
 </Window>

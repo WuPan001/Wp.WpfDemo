@@ -55,7 +55,7 @@ namespace Wp.WpfDemo.UIL.ViewModels.Pages
         /// </summary>
         public ICommand ScrollViewToTopCmd => new RelayCommand<ScrollViewer>(s => s.ScrollToTop());
 
-        public ICommand NextStepCmd = new RelayCommand<StepBar>(s =>
+        public ICommand NextStepCmd => new RelayCommand<StepBar>(s =>
         {
             s.Next();
         });

@@ -9,7 +9,6 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\fr\
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\ko-KR\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\ru\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\tr\HandyControl.resources.dll
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.WpfDemo.UIL.TestHandyControl.csprojAssemblyReference.cache
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\App.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.WpfDemo.UIL.TestHandyControl_MarkupCompile.cache
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.WpfDemo.UIL.TestHandyControl_MarkupCompile.lref

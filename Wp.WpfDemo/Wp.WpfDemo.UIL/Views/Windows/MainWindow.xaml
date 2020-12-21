@@ -19,6 +19,10 @@
 	<Window.DataContext>
 		<vm:MainWindowVM />
 	</Window.DataContext>
+	<Window.InputBindings>
+		<KeyBinding Gesture="Ctrl+Alt+Q"
+					Command="{Binding KeyCmd}" />
+	</Window.InputBindings>
 	<Window.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.MergedDictionaries>
@@ -152,10 +156,12 @@
 															   CommandParameter="{Binding  RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type TreeView}},Path=SelectedItem}" />
 									</i:EventTrigger>
 								</i:Interaction.Triggers>
-								<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+								<TreeViewItem IsSelected="{Binding IsHomeSelected}"
+											  Style="{StaticResource TreeViewItemStyle}"
 											  Tag="{Binding NavigationItems[0]}"
 											  HeaderTemplate="{DynamicResource NavigationDataTemplate}" />
-								<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+								<TreeViewItem Visibility="{Binding TestVisibility}"
+											  Style="{StaticResource TreeViewItemStyle}"
 											  Tag="{Binding NavigationItems[1]}"
 											  HeaderTemplate="{DynamicResource NavigationDataTemplate}">
 									<!--<TreeViewItem Style="{StaticResource TreeViewItemStyle}"

@@ -15,10 +15,10 @@
         Width="1920"
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
-        Style="{DynamicResource NoneWindowStyle}">
-    <Window.DataContext>
+        Style="{DynamicResource WindowStyle}">
+    <!--<Window.DataContext>
         <vm:MainWindowVM />
-    </Window.DataContext>
+    </Window.DataContext>-->
     <Window.InputBindings>
         <KeyBinding Gesture="Ctrl+Alt+Q"
                     Command="{Binding KeyCmd}" />
@@ -99,11 +99,11 @@
                                     FontSize="26"
                                     Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
                                     CommandParameter="{x:Static Dock.Left}"
-                                    Content="{Binding CurrentUserInfo.Name[0]}">
+                                    Content="{Binding CurrentUserInfo.UserName[0]}">
                                 <Button.ToolTip>
                                     <ToolTip>
                                         <TextBlock>
-										<Run Text="{Binding CurrentUserInfo.Name}" />
+										<Run Text="{Binding CurrentUserInfo.UserName}" />
 										<Run Text="    已登录" /></TextBlock>
                                     </ToolTip>
                                 </Button.ToolTip>
@@ -160,11 +160,10 @@
                                               Style="{StaticResource TreeViewItemStyle}"
                                               Tag="{Binding NavigationItems[0]}"
                                               HeaderTemplate="{DynamicResource NavigationDataTemplate}" />
-                                <TreeViewItem Visibility="{Binding TestVisibility}"
-                                              Style="{StaticResource TreeViewItemStyle}"
+                                <TreeViewItem Style="{StaticResource TreeViewItemStyle}"
                                               Tag="{Binding NavigationItems[1]}"
                                               HeaderTemplate="{DynamicResource NavigationDataTemplate}">
-                                    <!--<TreeViewItem Style="{StaticResource TreeViewItemStyle}"
+                                    <!--<TreeViewItem Visibility="{Binding TestVisibility}" Style="{StaticResource TreeViewItemStyle}"
 								  Tag="{Binding NavigationItems[3] }"
 								  HeaderTemplate="{DynamicResource NavigationDataTemplate}" />-->
                                 </TreeViewItem>
@@ -219,7 +218,7 @@
                                           BorderThickness="0"
                                           Foreground="White"
                                           FontSize="25"
-                                          Content="{Binding CurrentUserInfo.Name[0]}">
+                                          Content="{Binding CurrentUserInfo.UserName[0]}">
                                 <!--<materialDesign:ToggleButtonAssist.OnContent>
 									<TextBlock Style="{StaticResource CurrentUserTextBlockStyle}"
 											   Foreground="White"
@@ -231,7 +230,7 @@
                                 <TextBlock FontWeight="Bold"
                                            FontSize="20"
                                            Foreground="{StaticResource Primary500SolidColorBrushStyle}"
-                                           Text="{Binding CurrentUserInfo.Name}" />
+                                           Text="{Binding CurrentUserInfo.UserName}" />
                                 <TextBlock Text="{Binding CurrentUserInfo.Authority}"
                                            FontSize="18"
                                            Foreground="{StaticResource Primary500SolidColorBrushStyle}"

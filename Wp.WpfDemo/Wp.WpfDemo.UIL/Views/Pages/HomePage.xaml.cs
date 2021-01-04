@@ -24,5 +24,14 @@ namespace Wp.WpfDemo.UIL.Views.Pages
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            if ((bool)printDialog.ShowDialog())
+            {
+                printDialog.PrintVisual(TestPrinter, "打印测试");
+            }
+        }
     }
 }

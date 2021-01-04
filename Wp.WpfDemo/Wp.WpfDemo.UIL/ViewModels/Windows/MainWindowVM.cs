@@ -10,6 +10,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Wp.Helpers;
+using Wp.WpfDemo.Model.Entities;
 using Wp.WpfDemo.Model.Enums;
 
 namespace Wp.WpfDemo.UIL.ViewModels.Windows
@@ -29,12 +30,13 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
         /// </summary>
         public ObservableCollection<ENavigationItem> NavigationItems { get { return EnumHelper.GetEnumItems<ENavigationItem>(); } }
 
-        //private UserInfo _currentUserInfo = new UserInfo();
+        private UserInfo _currentUserInfo = new UserInfo();
 
-        ///// <summary>
-        ///// 当前用户信息
-        ///// </summary>
-        //public UserInfo CurrentUserInfo { get { return _currentUserInfo; } set { _currentUserInfo = value; RaisePropertyChanged(); } }
+        /// <summary>
+        /// 当前用户信息
+        /// </summary>
+        public UserInfo CurrentUserInfo { get { return _currentUserInfo; } set { _currentUserInfo = value; RaisePropertyChanged(); } }
+
         private Visibility _testVisibility = Visibility.Collapsed;
 
         public Visibility TestVisibility { get { return _testVisibility; } set { _testVisibility = value; RaisePropertyChanged(); } }
@@ -71,7 +73,10 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
 
         #region 方法
 
-        //
+        public MainWindowVM()
+        {
+            CurrentUserInfo = new UserInfo() { UserName = "张三", Authority = EUserAuthority.Temp };
+        }
 
         #endregion 方法
     }

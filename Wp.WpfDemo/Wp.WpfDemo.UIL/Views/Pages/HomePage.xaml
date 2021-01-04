@@ -41,8 +41,20 @@
                 </hc:SimplePanel>
             </hc:TabItem>
             <hc:TabItem IsSelected="True"
-                        Header="TabItem2">
-                <hc:SimplePanel Background="#FFE8563F" />
+                        Header="TestPrint">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0"
+                          x:Name="TestPrinter">
+                        <TextBlock Text="TestPrinter"
+                                   FontSize="100" />
+                    </Grid>
+                    <Button Grid.Row="1"
+                            Click="Button_Click" />
+                </Grid>
             </hc:TabItem>
             <hc:TabItem Header="TabItem3">
                 <hc:SimplePanel Background="#FF3F4EE8" />

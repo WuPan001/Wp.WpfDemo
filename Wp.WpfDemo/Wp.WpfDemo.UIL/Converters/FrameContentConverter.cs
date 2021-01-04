@@ -47,12 +47,12 @@ namespace Wp.WpfDemo.UIL.Converters
             }
             else
             {
-                Navigation1(item);
+                GetNavigationItem(item);
                 return GetPage(item);
             }
         }
 
-        private void Navigation1(TreeViewItem item)
+        private void GetNavigationItem(TreeViewItem item)
         {
             switch (item.Tag)
             {

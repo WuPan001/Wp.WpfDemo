@@ -11,7 +11,6 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Wp.WpfDemo.UIL.ViewModels.Windows;
 
 namespace Wp.WpfDemo.UIL.Views.Windows
 {
@@ -23,7 +22,6 @@ namespace Wp.WpfDemo.UIL.Views.Windows
         public MainWindow()
         {
             InitializeComponent();
-            //DataContext = new MainWindowVM();
         }
     }
 }

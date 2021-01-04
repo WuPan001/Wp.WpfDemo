@@ -25,3 +25,9 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\App
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Views\Windows\Window1.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Styles\FlipClock.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Styles\FlipNumber.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignColors.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignColors.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.WpfDemo.UIL.TestHandyControl.csprojAssemblyReference.cache

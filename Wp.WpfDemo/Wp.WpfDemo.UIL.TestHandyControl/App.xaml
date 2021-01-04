@@ -1,6 +1,7 @@
 ﻿<Application x:Class="Wp.WpfDemo.UIL.TestHandyControl.App"
 			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:hc="https://handyorg.github.io/handycontrol"
 			 xmlns:local="clr-namespace:Wp.WpfDemo.UIL.TestHandyControl"
 			 StartupUri="/Views/Windows/Window1.xaml">
 	<Application.Resources>

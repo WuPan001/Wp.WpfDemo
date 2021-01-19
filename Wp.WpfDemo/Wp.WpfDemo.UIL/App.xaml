@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
              xmlns:local="clr-namespace:Wp.WpfDemo.UIL"
-             StartupUri="/Views/Windows/MainWindow.xaml">
+             StartupUri="/Views/Windows/Window1.xaml">
+    <!--MainWindow-->
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>

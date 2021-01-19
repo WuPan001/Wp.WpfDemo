@@ -1,72 +1,74 @@
 ﻿<Window x:Class="Wp.WpfDemo.UIL.Views.Windows.LoginWindow"
-		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-		xmlns:pw="clr-namespace:Wp.WpfDemo.BLL.Helpers;assembly=Wp.WpfDemo.BLL"
-		xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.ViewModels.Windows"
-		xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-		xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-		xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
-		xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Windows"
-		mc:Ignorable="d"
-		Title="LoginWindow"
-		Height="450"
-		Width="800"
-		Style="{DynamicResource NoneWindowStyle}"
-		WindowStartupLocation="CenterScreen">
-	<Window.Resources>
-		<ResourceDictionary>
-			<ResourceDictionary.MergedDictionaries>
-				<ResourceDictionary Source="/Styles/WindowStyles.xaml" />
-				<ResourceDictionary Source="/Styles/IconFontStyles/WindowTextBlockStyles.xaml" />
-				<ResourceDictionary Source="/Styles/ButtonStyles.xaml" />
-				<ResourceDictionary Source="/Styles/ComboBoxStyles.xaml" />
-			</ResourceDictionary.MergedDictionaries>
-		</ResourceDictionary>
-	</Window.Resources>
-	<Window.DataContext>
-		<vm:LoginWindowVM />
-	</Window.DataContext>
-	<Grid>
-		<Grid.RowDefinitions>
-			<RowDefinition Height="40" />
-			<RowDefinition Height="*" />
-		</Grid.RowDefinitions>
-		<Border Grid.Row="0"
-				CornerRadius="8 8 0 0"
-				Background="{StaticResource Primary600SolidColorBrushStyle}">
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="20" />
-					<ColumnDefinition Width="auto" />
-					<ColumnDefinition Width="*" />
-					<ColumnDefinition Width="30" />
-					<ColumnDefinition Width="5" />
-					<ColumnDefinition Width="30" />
-					<ColumnDefinition Width="5" />
-					<ColumnDefinition Width="30" />
-					<ColumnDefinition Width="20" />
-				</Grid.ColumnDefinitions>
-				<!--<TextBlock Grid.Column="1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pw="clr-namespace:Wp.WpfDemo.BLL.Helpers;assembly=Wp.WpfDemo.BLL"
+        xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.ViewModels.Windows"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:cmd="http://www.galasoft.ch/mvvmlight"
+        xmlns:svgc="http://sharpvectors.codeplex.com/svgc/"
+        xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Windows"
+        mc:Ignorable="d"
+        Title="LoginWindow"
+        Height="450"
+        Width="800"
+        Style="{DynamicResource NoneWindowStyle}"
+        WindowStartupLocation="CenterScreen"
+        x:Name="LoginWd">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/WindowStyles.xaml" />
+                <ResourceDictionary Source="/Styles/IconFontStyles/WindowTextBlockStyles.xaml" />
+                <ResourceDictionary Source="/Styles/ButtonStyles.xaml" />
+                <ResourceDictionary Source="/Styles/ComboBoxStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.DataContext>
+        <vm:LoginWindowVM />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0"
+                CornerRadius="8 8 0 0"
+                Background="{StaticResource Primary600SolidColorBrushStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="20" />
+                    <ColumnDefinition Width="auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="5" />
+                    <ColumnDefinition Width="30" />
+                    <ColumnDefinition Width="20" />
+                </Grid.ColumnDefinitions>
+                <!--<TextBlock Grid.Column="1"
 						   Margin="0 0 10 0"
 						   Style="{StaticResource CleanTextBlockStyle}"
 						   Foreground="White" />-->
-				<TextBlock Grid.Column="2"
-						   Text="Title"
-						   Style="{StaticResource SecondaryTextBlockStyle}"
-						   HorizontalAlignment="Left"
-						   Foreground="White" />
-				<TextBlock Grid.Column="5"
-						   Style="{StaticResource PrimaryMinTextBlockStyle}"
-						   ToolTip="最小化">
+                <TextBlock Grid.Column="2"
+                           Text="Title"
+                           Style="{StaticResource SecondaryTextBlockStyle}"
+                           HorizontalAlignment="Left"
+                           Foreground="White" />
+                <TextBlock Grid.Column="5"
+                           Style="{StaticResource PrimaryMinTextBlockStyle}"
+                           ToolTip="最小化">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="MouseLeftButtonUp">
 						<i:InvokeCommandAction Command="{Binding MinCmd}"
-											   CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
+                                               CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
 					</i:EventTrigger>
 				</i:Interaction.Triggers></TextBlock>
-				<!--<TextBlock Grid.Column="3"
+                <!--<TextBlock Grid.Column="3"
 					   Style="{StaticResource MaxTextBlockStyle}"
 					   ToolTip="向下还原">
 				<i:Interaction.Triggers>
@@ -75,84 +77,94 @@
 											   CommandParameter="{Binding ElementName=MainWd}" />
 					</i:EventTrigger>
 				</i:Interaction.Triggers></TextBlock>-->
-				<TextBlock Grid.Column="7"
-						   Style="{StaticResource PrimaryCloseTextBlockStyle}"
-						   ToolTip="退出">
+                <TextBlock Grid.Column="7"
+                           Style="{StaticResource PrimaryCloseTextBlockStyle}"
+                           ToolTip="退出">
 				<i:Interaction.Triggers>
 					<i:EventTrigger EventName="MouseLeftButtonUp">
 						<i:InvokeCommandAction Command="{Binding CloseCmd }"
-											   CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
+                                               CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
 					</i:EventTrigger>
 				</i:Interaction.Triggers></TextBlock>
-			</Grid>
-		</Border>
-		<Grid Grid.Row="2">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="400" />
-			</Grid.ColumnDefinitions>
-			<svgc:SvgViewbox Grid.Column="0"
-							 Margin="20"
-							 IsHitTestVisible="True"
-							 Source="/Resources/Login.svg" />
-			<Grid Grid.Column="1">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="*" />
-					<RowDefinition Height="50" />
-					<RowDefinition Height="5" />
-					<RowDefinition Height="50" />
-					<RowDefinition Height="5" />
-					<RowDefinition Height="110" />
-					<RowDefinition Height="20" />
-				</Grid.RowDefinitions>
-				<TextBlock Text="登 录 界 面"
-						   FontSize="40"
-						   Style="{StaticResource SecondaryTextBlockStyle }" />
-				<Grid Grid.Row="1">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="20" />
-						<ColumnDefinition Width="50" />
-						<ColumnDefinition Width="5" />
-						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="20" />
-					</Grid.ColumnDefinitions>
-					<!--<TextBlock Grid.Column="1"
+            </Grid>
+        </Border>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="400" />
+            </Grid.ColumnDefinitions>
+            <svgc:SvgViewbox Grid.Column="0"
+                             Margin="20"
+                             IsHitTestVisible="True"
+                             Source="/Resources/LoginAnimate.svg" />
+            <!--<svgc:SvgViewbox Grid.Column="0"
+                             Margin="20"
+                             IsHitTestVisible="True"
+                             Source="/Resources/Login.svg" />-->
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="5" />
+                    <RowDefinition Height="110" />
+                    <RowDefinition Height="20" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="登 录 界 面"
+                           FontSize="40"
+                           Style="{StaticResource SecondaryTextBlockStyle }" />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBlock Grid.Column="1"
 							   Style="{StaticResource UserTextBlockStyle}" />-->
-					<ComboBox Grid.Column="3"
-							  ItemsSource="{Binding UserNames}"
-							  Style="{StaticResource TertiaryComboBocStyle}"
-							  IsEditable="True"
-							  materialDesign:HintAssist.Hint="请输入或选择用户名"
-							  Text="{Binding UserName ,Mode=OneWayToSource}" />
-				</Grid>
-				<Grid Grid.Row="3">
-					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="20" />
-						<ColumnDefinition Width="50" />
-						<ColumnDefinition Width="5" />
-						<ColumnDefinition Width="*" />
-						<ColumnDefinition Width="20" />
-					</Grid.ColumnDefinitions>
-					<!--<TextBlock Grid.Column="1"
+                    <ComboBox Grid.Column="3"
+                              ItemsSource="{Binding UserNames}"
+                              Style="{StaticResource TertiaryComboBocStyle}"
+                              IsEditable="True"
+                              materialDesign:HintAssist.Hint="请输入或选择用户名"
+                              Text="{Binding UserName ,Mode=OneWayToSource}" />
+                </Grid>
+                <Grid Grid.Row="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20" />
+                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="5" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="20" />
+                    </Grid.ColumnDefinitions>
+                    <!--<TextBlock Grid.Column="1"
 							   Style="{StaticResource PWDTextBlockStyle}"
 							   VerticalAlignment="Bottom" />-->
-					<PasswordBox  Grid.Column="3"
-								  FontSize="20"
-								  materialDesign:HintAssist.Hint="请输入密码"
-								  materialDesign:TextFieldAssist.HasClearButton="True"
-								  materialDesign:TextFieldAssist.UnderlineBrush="{StaticResource Primary500SolidColorBrushStyle}"
-								  Foreground="{StaticResource Primary300SolidColorBrushStyle}"
-								  materialDesign:HintAssist.HintOpacity=".26"
-								  pw:PasswordBoxHelper.Attach="True"
-								  pw:PasswordBoxHelper.Password="{Binding PWD, Mode=OneWayToSource}" />
-				</Grid>
-				<Grid Grid.Row="5">
-					<Button Style="{StaticResource  ConfirmButtonStyle}"
-							Content="登录"
-							Command="{Binding LoginCmd}"
-							CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
-				</Grid>
-			</Grid>
-		</Grid>
-	</Grid>
+                    <PasswordBox  Grid.Column="3"
+                                  FontSize="20"
+                                  materialDesign:HintAssist.Hint="请输入密码"
+                                  materialDesign:TextFieldAssist.HasClearButton="True"
+                                  materialDesign:TextFieldAssist.UnderlineBrush="{StaticResource Primary500SolidColorBrushStyle}"
+                                  Foreground="{StaticResource Primary300SolidColorBrushStyle}"
+                                  materialDesign:HintAssist.HintOpacity=".26"
+                                  pw:PasswordBoxHelper.Attach="True"
+                                  pw:PasswordBoxHelper.Password="{Binding PWD, Mode=OneWayToSource}" />
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Button Style="{StaticResource  ConfirmButtonStyle}"
+                            Content="登录"
+                            Command="{Binding LoginCmd}"
+                            CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type Window}}}" />
+                </Grid>
+            </Grid>
+        </Grid>
+    </Grid>
+    <!--<i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadedCmd}"
+                                   CommandParameter="{Binding ElementName=LoginWd}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>-->
 </Window>

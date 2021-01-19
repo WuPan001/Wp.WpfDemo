@@ -50,10 +50,6 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
             {
                 return new RelayCommand<Window>(wd =>
                 {
-                    //    new HighLightQuestionWindow(new HighLighQuestionWindowVM(new HighLightMsg(
-                    //"系统中当前车树数量为",
-                    //"20",
-                    //"车上树实际数量是否与之相符？若车上树实际数量与系统中当前车树数量一致，则将加载整车树的产品信息；若不一致，将仅加载该树产品信息。"), "是", "否")).ShowDialog();
                     var main = new MainWindow();
                     wd?.Close();
                     main.Show();

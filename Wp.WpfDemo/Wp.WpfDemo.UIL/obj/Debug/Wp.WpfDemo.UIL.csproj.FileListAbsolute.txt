@@ -119,3 +119,5 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Wp.WpfDemo.UIL_Conte
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\Dragablz.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\Dragablz.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\Dragablz.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Windows\Window1.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\Windows\Window1.baml

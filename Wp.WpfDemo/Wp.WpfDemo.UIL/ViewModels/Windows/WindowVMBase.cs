@@ -32,6 +32,18 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
 
         public ICommand MinCmd => new RelayCommand<Window>(wd => { wd.WindowState = WindowState.Minimized; });
 
+        public ICommand LoadedCmd => new RelayCommand<Window>((wd) =>
+        {
+            wd.MouseMove += (sender, e) =>
+            {
+                if (e.LeftButton == MouseButtonState.Pressed)
+                {
+                    wd.DragMove();
+                };
+            };
+            wd.MouseDoubleClick += (sender, e) => wd.WindowState = wd.WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
+        });
+
         #endregion 命令
 
         #region 方法

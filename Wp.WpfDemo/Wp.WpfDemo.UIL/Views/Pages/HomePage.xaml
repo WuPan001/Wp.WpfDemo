@@ -3,6 +3,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:hc="https://handyorg.github.io/handycontrol"
       xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Pages"
       mc:Ignorable="d"
@@ -18,6 +19,7 @@
                 <ResourceDictionary Source="/Styles/ColorStyles.xaml" />
                 <ResourceDictionary Source="/Styles/PageStyles.xaml" />
                 <ResourceDictionary Source="/Styles/BorderStyles.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Page.Resources>
@@ -56,8 +58,21 @@
                             Click="Button_Click" />
                 </Grid>
             </hc:TabItem>
-            <hc:TabItem Header="TabItem3">
-                <hc:SimplePanel Background="#FF3F4EE8" />
+            <hc:TabItem Header="PopupBox">
+                <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
+                                         HorizontalAlignment="Right"
+                                         VerticalAlignment="Bottom"
+                                         Margin="32"
+                                         Grid.Row="1">
+                    <StackPanel>
+                        <Button ToolTip="GitHub"
+                                Content="{materialDesign:PackIcon Kind=Github, Size=20}" />
+                        <Button ToolTip="Twitter"
+                                Background="{DynamicResource PrimaryHueMidBrush}"
+                                Foreground="{DynamicResource PrimaryHueMidForegroundBrush}"
+                                Content="{materialDesign:PackIcon Kind=Twitter, Size=20}" />
+                    </StackPanel>
+                </materialDesign:PopupBox>
             </hc:TabItem>
             <hc:TabItem Header="TabItem4">
                 <hc:SimplePanel Background="#FFE83F6D" />

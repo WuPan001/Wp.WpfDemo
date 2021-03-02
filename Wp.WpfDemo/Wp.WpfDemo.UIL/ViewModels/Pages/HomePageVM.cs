@@ -23,6 +23,17 @@ namespace Wp.WpfDemo.UIL.ViewModels.Pages
         /// </summary>
         public ObservableCollection<AssemblySteperInfo> SteperItemInfo { get { return _steperItemInfo; } set { _steperItemInfo = value; RaisePropertyChanged(); } }
 
+        private int testRadioButton;
+
+        /// <summary>
+        /// RadioButton测试
+        /// </summary>
+        public int TestRadioButton
+        {
+            get { return testRadioButton; }
+            set { testRadioButton = value; RaisePropertyChanged(); }
+        }
+
         public ICommand StepperTestCmd => new RelayCommand(() =>
         {
             var temp = EnumHelper.GetEnumItems<EAssemblyStatus>();
@@ -58,6 +69,11 @@ namespace Wp.WpfDemo.UIL.ViewModels.Pages
         public ICommand NextStepCmd => new RelayCommand<StepBar>(s =>
         {
             s.Next();
+        });
+
+        public ICommand TestRadioButtonCmd => new RelayCommand(() =>
+        {
+            Console.WriteLine(testRadioButton);
         });
     }
 }

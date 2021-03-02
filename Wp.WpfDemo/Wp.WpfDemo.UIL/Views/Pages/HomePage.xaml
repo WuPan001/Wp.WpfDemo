@@ -6,11 +6,16 @@
       xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
       xmlns:hc="https://handyorg.github.io/handycontrol"
       xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Views.Pages"
+      xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.ViewModels.Pages"
+      xmlns:radioButtonConverter="clr-namespace:Wp.WpfDemo.BLL.Converters;assembly=Wp.WpfDemo.BLL"
       mc:Ignorable="d"
       Title="HomePage"
       d:DesignHeight="966"
       d:DesignWidth="1641"
       Style="{DynamicResource  MianWindowPageStyle}">
+    <Page.DataContext>
+        <vm:HomePageVM />
+    </Page.DataContext>
     <Page.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -21,6 +26,7 @@
                 <ResourceDictionary Source="/Styles/BorderStyles.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <radioButtonConverter:RadioButtonConverter x:Key="radioButtonConverter" />
         </ResourceDictionary>
     </Page.Resources>
     <Border Style="{StaticResource  PageBorderStyle}">
@@ -74,11 +80,19 @@
                     </StackPanel>
                 </materialDesign:PopupBox>
             </hc:TabItem>
-            <hc:TabItem Header="TabItem4">
-                <hc:SimplePanel Background="#FFE83F6D" />
-            </hc:TabItem>
+            <hc:TabItem Header="Drawer抽屉"></hc:TabItem>
             <hc:TabItem Header="TabItem5">
-                <hc:SimplePanel Background="#FFB23FE8" />
+                <StackPanel Background="White">
+                    <RadioButton IsChecked="{Binding TestRadioButton ,Mode=TwoWay, Converter={StaticResource radioButtonConverter},ConverterParameter=0}"
+                                 Content="参数1" />
+                    <RadioButton IsChecked="{Binding TestRadioButton ,Mode=TwoWay, Converter={StaticResource radioButtonConverter},ConverterParameter=1}"
+                                 Content="参数2" />
+                    <RadioButton IsChecked="{Binding TestRadioButton ,Mode=TwoWay, Converter={StaticResource radioButtonConverter},ConverterParameter=2}"
+                                 Content="参数3" />
+                    <RadioButton IsChecked="{Binding TestRadioButton ,Mode=TwoWay, Converter={StaticResource radioButtonConverter},ConverterParameter=3}"
+                                 Content="参数4" />
+                    <Button Command="{Binding TestRadioButtonCmd}">test</Button>
+                </StackPanel>
             </hc:TabItem>
             <hc:TabItem Header="TabItem6">
                 <hc:SimplePanel Background="#FF3FE8E8" />

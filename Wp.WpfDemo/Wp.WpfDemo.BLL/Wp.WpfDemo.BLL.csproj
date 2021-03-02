@@ -101,6 +101,7 @@
     <Compile Include="Converters\MsgConverters\TitleConverter.cs" />
     <Compile Include="Converters\NavigationConverters\NavigationHeadConverter.cs" />
     <Compile Include="Converters\NavigationConverters\NavigationIconConverter.cs" />
+    <Compile Include="Converters\RadioButtonConverter.cs" />
     <Compile Include="Helpers\PasswordBoxHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

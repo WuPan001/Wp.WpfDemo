@@ -166,6 +166,9 @@
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainWindowVM.cs" />
     <Compile Include="ViewModels\Windows\WindowVMBase.cs" />
+    <Compile Include="Views\MyDrawer.xaml.cs">
+      <DependentUpon>MyDrawer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ContactUsPage.xaml.cs">
       <DependentUpon>ContactUsPage.xaml</DependentUpon>
     </Compile>
@@ -258,6 +261,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Styles\WindowStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MyDrawer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

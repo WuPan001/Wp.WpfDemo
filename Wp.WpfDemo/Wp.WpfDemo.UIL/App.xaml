@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
              xmlns:local="clr-namespace:Wp.WpfDemo.UIL"
-             StartupUri="/Views/Windows/Window1.xaml">
+             StartupUri="/Views/Windows/MainWindow.xaml">
     <!--MainWindow-->
     <Application.Resources>
         <ResourceDictionary>
@@ -13,7 +13,6 @@
                 <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/SkinDefault.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/HandyControl;component/Themes/Theme.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.CheckBox.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ListBox.xaml" />
@@ -63,9 +62,30 @@
                         </ResourceDictionary>
                         <!-- Include the Dragablz Material Design style -->
                         <ResourceDictionary Source="pack://application:,,,/Dragablz;component/Themes/materialdesign.xaml" />
-                        <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                        <!--<ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />-->
                     </ResourceDictionary.MergedDictionaries>
                     <!-- tell Dragablz tab control to use the Material Design theme -->
+                    <!--HandyControl与OxyPlot和LiveCharts使用出现绘图位置偏移问题
+概述：
+HandyControl是一套不错的开源WPF控件库，它几乎重写了所有原生样式，同时包含70余款自定义控件。
+
+github: https://github.com/HandyOrg/HandyControl
+
+在使用中发现，当HandyControl与其他图表控件一起使用的时候会出问题，比如常用的OxyPlot和LiveCharts和HandyControl一起用的时候会出现图形位置偏移。
+
+在OxyPlot上的表现是坐标背景网格的位置便宜，LiveCharts是是绘制点的位置偏移。
+
+产生原因：
+由于HandyControl几乎重写了所有的wpf原生样式，当然也包括了Path的默认样式，源码
+
+从而导致OxyPlot及LiveChart绘图控件在HandyCOntrol上的图形位置偏移。
+
+解决办法：
+清除HandyControl样式影响，设置Path的Style为空，在App.xaml中或者使用LiveCharts控件的父级资源中添加下面一行内容
+
+<Style TargetType="Path" BasedOn="{x:Null}" />-->
+                    <Style TargetType="Path"
+                           BasedOn="{x:Null}" />
                     <Style TargetType="{x:Type dragablz:TabablzControl}"
                            BasedOn="{StaticResource MaterialDesignTabablzControlStyle}" />
                 </ResourceDictionary>

@@ -31,3 +31,6 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\Mat
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignThemes.Wpf.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\MaterialDesignThemes.Wpf.xml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.WpfDemo.UIL.TestHandyControl.csprojAssemblyReference.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\ca-ES\HandyControl.resources.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\pl\HandyControl.resources.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\pt-BR\HandyControl.resources.dll

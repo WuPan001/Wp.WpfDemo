@@ -1,10 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -41,7 +36,7 @@ namespace Wp.WpfDemo.UIL.ViewModels.Windows
                     wd.DragMove();
                 };
             };
-            wd.MouseDoubleClick += (sender, e) => wd.WindowState = wd.WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
+            //wd.MouseDoubleClick += (sender, e) => wd.WindowState = wd.WindowState == WindowState.Maximized ? WindowState.Normal : WindowState.Maximized;
         });
 
         #endregion 命令

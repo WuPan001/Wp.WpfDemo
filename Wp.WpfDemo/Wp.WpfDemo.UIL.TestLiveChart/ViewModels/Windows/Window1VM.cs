@@ -3,12 +3,6 @@ using GalaSoft.MvvmLight.Command;
 using LiveCharts;
 using LiveCharts.Wpf;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace Wp.WpfDemo.UIL.TestLiveChart.ViewModels.Windows

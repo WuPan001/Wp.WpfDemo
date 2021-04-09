@@ -1,33 +1,33 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:converter="clr-namespace:Wp.WpfDemo.BLL.Converters.NavigationConverters;assembly=Wp.WpfDemo.BLL">
-	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="/Styles/TreeViewStyles.xaml" />
-	</ResourceDictionary.MergedDictionaries>
-	<!--<converter:NavigationHeadConverter x:Key="headConverter" />
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converter="clr-namespace:Wp.WpfDemo.BLL.Converters.NavigationConverters;assembly=Wp.WpfDemo.BLL">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/TreeViewStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <!--<converter:NavigationHeadConverter x:Key="headConverter" />
 	<converter:NavigationIconConverter x:Key="iconConverter"
 									   Home="{StaticResource HomeTextBlockStyle}"
 									   SystemSetting="{StaticResource SysSettingTextBlockStyle}"
 									   ContactUs="{StaticResource ContactUsTextBlockStyle}" />-->
-	<converter:NavigationHeadConverter x:Key="headConverter" />
-	<converter:NavigationIconConverter x:Key="iconConverter" />
-	<!--一级导航栏选项模板-->
-	<DataTemplate x:Key="NavigationDataTemplate">
-		<Grid HorizontalAlignment="Stretch">
-			<Grid.ColumnDefinitions>
-				<ColumnDefinition Width="35" />
-				<ColumnDefinition Width="*" />
-			</Grid.ColumnDefinitions>
-			<!--<TextBlock Grid.Column="0"
+    <converter:NavigationHeadConverter x:Key="headConverter" />
+    <converter:NavigationIconConverter x:Key="iconConverter" />
+    <!--一级导航栏选项模板-->
+    <DataTemplate x:Key="NavigationDataTemplate">
+        <Grid HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="35" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--<TextBlock Grid.Column="0"
 					   Style="{Binding Path=DataContext ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource navigationIconConverter}}" />
 			<TextBlock Grid.Column="1"
 					   Style="{StaticResource  TreeViewItemHeadTextBlockStyle}"
 					   Text="{Binding Path=DataContext ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource navigationHeadConverter}}" />-->
-			<TextBlock Grid.Column="0"
-					   Style="{Binding Path=Tag  ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource iconConverter }}" />
-			<TextBlock Grid.Column="1"
-					   Style="{StaticResource  TreeViewItemHeadTextBlockStyle}"
-					   Text="{Binding Path=Tag ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource headConverter}}" />
-		</Grid>
-	</DataTemplate>
+            <TextBlock Grid.Column="0"
+                       Style="{Binding Path=Tag  ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource iconConverter }}" />
+            <TextBlock Grid.Column="1"
+                       Style="{StaticResource  TreeViewItemHeadTextBlockStyle}"
+                       Text="{Binding Path=Tag ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}},Converter={StaticResource headConverter}}" />
+        </Grid>
+    </DataTemplate>
 </ResourceDictionary>

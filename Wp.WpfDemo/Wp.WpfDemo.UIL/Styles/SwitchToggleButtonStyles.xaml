@@ -1,36 +1,35 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-					xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-					xmlns:local="clr-namespace:Wp.WpfDemo.UIL.Styles">
-	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="/Styles/SolidColorBrushStyles.xaml" />
-	</ResourceDictionary.MergedDictionaries>
-	<Style x:Key="SwitchToggleButtonStyle"
-		   TargetType="ToggleButton"
-		   BasedOn="{StaticResource MaterialDesignSwitchToggleButton}">
-		<Setter Property="VerticalAlignment"
-				Value="Center" />
-		<Setter Property="HorizontalAlignment"
-				Value="Left" />
-		<Setter Property="materialDesign:ToggleButtonAssist.SwitchTrackOnBackground"
-				Value="{StaticResource  Primary200SolidColorBrushStyle }" />
-		<Setter Property="materialDesign:ToggleButtonAssist.SwitchTrackOffBackground"
-				Value="Gray" />
-		<Style.Triggers>
-			<Trigger Property="IsChecked"
-					 Value="True">
-				<Setter Property="Background"
-						Value="{StaticResource Primary500SolidColorBrushStyle}" />
-				<Setter Property="Foreground"
-						Value="White" />
-			</Trigger>
-			<Trigger Property="IsChecked"
-					 Value="False">
-				<Setter Property="Background"
-						Value="White" />
-				<Setter Property="Foreground"
-						Value="{StaticResource Primary500SolidColorBrushStyle}" />
-			</Trigger>
-		</Style.Triggers>
-	</Style>
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/SolidColorBrushStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <Style x:Key="SwitchToggleButtonStyle"
+           TargetType="ToggleButton"
+           BasedOn="{StaticResource MaterialDesignSwitchToggleButton}">
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="HorizontalAlignment"
+                Value="Left" />
+        <Setter Property="materialDesign:ToggleButtonAssist.SwitchTrackOnBackground"
+                Value="{StaticResource  Primary200SolidColorBrushStyle }" />
+        <Setter Property="materialDesign:ToggleButtonAssist.SwitchTrackOffBackground"
+                Value="Gray" />
+        <Style.Triggers>
+            <Trigger Property="IsChecked"
+                     Value="True">
+                <Setter Property="Background"
+                        Value="{StaticResource Primary500SolidColorBrushStyle}" />
+                <Setter Property="Foreground"
+                        Value="White" />
+            </Trigger>
+            <Trigger Property="IsChecked"
+                     Value="False">
+                <Setter Property="Background"
+                        Value="White" />
+                <Setter Property="Foreground"
+                        Value="{StaticResource Primary500SolidColorBrushStyle}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
 </ResourceDictionary>

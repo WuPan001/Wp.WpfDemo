@@ -1,191 +1,191 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="/Styles/SolidColorBrushStyles.xaml" />
-	</ResourceDictionary.MergedDictionaries>
-	<SolidColorBrush x:Key="PrimarySolidColorBrushStyle"
-					 Color="{StaticResource Green500ColorStyle}" />
-	<SolidColorBrush x:Key="AssistSolidColorBrushStyle"
-					 Color="{StaticResource Grey500ColorStyle}" />
-	<Style x:Key="TextBlockStyleBase"
-		   TargetType="TextBlock">
-		<Setter Property="HorizontalAlignment"
-				Value="Center" />
-		<Setter Property="VerticalAlignment"
-				Value="Center" />
-		<Setter Property="TextAlignment"
-				Value="Center" />
-	</Style>
-	<!--#region IconFont-->
-	<Style x:Key="IconFontTextBlockStyleBase"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextBlockStyleBase}">
-		<Setter Property="FontFamily"
-				Value="/Resources/#iconfont" />
-		<Setter Property="FontSize"
-				Value="20" />
-	</Style>
-	<Style x:Key="PrimaryIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource IconFontTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource PrimarySolidColorBrushStyle}" />
-	</Style>
-	<Style x:Key="AssistIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource IconFontTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource AssistSolidColorBrushStyle}" />
-	</Style>
-	<Style x:Key="CmdIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource AssistIconFontTextBlockStyle}">
-		<Setter Property="Cursor"
-				Value="Hand" />
-		<Style.Triggers>
-			<Trigger Property="IsMouseOver"
-					 Value="True">
-				<Setter Property="Foreground"
-						Value="{StaticResource PrimarySolidColorBrushStyle}" />
-			</Trigger>
-		</Style.Triggers>
-	</Style>
-	<!--#region OperationIconFont-->
-	<Style x:Key="OperationIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource IconFontTextBlockStyleBase}">
-		<Setter Property="FontSize"
-				Value="50" />
-		<Setter Property="Foreground"
-				Value="{StaticResource AssistSolidColorBrushStyle}" />
-		<Setter Property="Cursor"
-				Value="Hand" />
-		<Style.Triggers>
-			<Trigger Property="IsMouseOver"
-					 Value="True">
-				<Setter Property="Foreground"
-						Value="{StaticResource PrimarySolidColorBrushStyle}" />
-				<Setter Property="FontSize"
-						Value="52" />
-			</Trigger>
-		</Style.Triggers>
-	</Style>
-	<!--#endregion-->
-	<!--#region WindowIconFont-->
-	<Style x:Key="WindowIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource IconFontTextBlockStyleBase}">
-		<Setter Property="FontSize"
-				Value="23" />
-		<Setter Property="Foreground"
-				Value="{StaticResource AssistSolidColorBrushStyle}" />
-		<Setter Property="Cursor"
-				Value="Hand" />
-		<Style.Triggers>
-			<Trigger Property="IsMouseOver"
-					 Value="True">
-				<Setter Property="Foreground"
-						Value="{StaticResource PrimarySolidColorBrushStyle}" />
-				<Setter Property="FontSize"
-						Value="25" />
-			</Trigger>
-		</Style.Triggers>
-	</Style>
-	<Style x:Key="PrimaryWindowIconFontTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource IconFontTextBlockStyleBase}">
-		<Setter Property="FontSize"
-				Value="23" />
-		<Setter Property="Foreground"
-				Value="White" />
-		<Setter Property="Cursor"
-				Value="Hand" />
-		<Setter Property="TextAlignment"
-				Value="Center" />
-		<Style.Triggers>
-			<Trigger Property="IsMouseOver"
-					 Value="True">
-				<!--<Setter Property="Foreground"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/SolidColorBrushStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <SolidColorBrush x:Key="PrimarySolidColorBrushStyle"
+                     Color="{StaticResource Green500ColorStyle}" />
+    <SolidColorBrush x:Key="AssistSolidColorBrushStyle"
+                     Color="{StaticResource Grey500ColorStyle}" />
+    <Style x:Key="TextBlockStyleBase"
+           TargetType="TextBlock">
+        <Setter Property="HorizontalAlignment"
+                Value="Center" />
+        <Setter Property="VerticalAlignment"
+                Value="Center" />
+        <Setter Property="TextAlignment"
+                Value="Center" />
+    </Style>
+    <!--#region IconFont-->
+    <Style x:Key="IconFontTextBlockStyleBase"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextBlockStyleBase}">
+        <Setter Property="FontFamily"
+                Value="/Resources/#iconfont" />
+        <Setter Property="FontSize"
+                Value="20" />
+    </Style>
+    <Style x:Key="PrimaryIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource IconFontTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource PrimarySolidColorBrushStyle}" />
+    </Style>
+    <Style x:Key="AssistIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource IconFontTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource AssistSolidColorBrushStyle}" />
+    </Style>
+    <Style x:Key="CmdIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource AssistIconFontTextBlockStyle}">
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource PrimarySolidColorBrushStyle}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#region OperationIconFont-->
+    <Style x:Key="OperationIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource IconFontTextBlockStyleBase}">
+        <Setter Property="FontSize"
+                Value="50" />
+        <Setter Property="Foreground"
+                Value="{StaticResource AssistSolidColorBrushStyle}" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource PrimarySolidColorBrushStyle}" />
+                <Setter Property="FontSize"
+                        Value="52" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+    <!--#region WindowIconFont-->
+    <Style x:Key="WindowIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource IconFontTextBlockStyleBase}">
+        <Setter Property="FontSize"
+                Value="23" />
+        <Setter Property="Foreground"
+                Value="{StaticResource AssistSolidColorBrushStyle}" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource PrimarySolidColorBrushStyle}" />
+                <Setter Property="FontSize"
+                        Value="25" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="PrimaryWindowIconFontTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource IconFontTextBlockStyleBase}">
+        <Setter Property="FontSize"
+                Value="23" />
+        <Setter Property="Foreground"
+                Value="White" />
+        <Setter Property="Cursor"
+                Value="Hand" />
+        <Setter Property="TextAlignment"
+                Value="Center" />
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver"
+                     Value="True">
+                <!--<Setter Property="Foreground"
 						Value="{StaticResource PrimaryTertiarySolidColorBrushStyle}" />-->
-				<Setter Property="FontSize"
-						Value="25" />
-			</Trigger>
-		</Style.Triggers>
-	</Style>
-	<!--#endregion-->
-	<!--#endregion-->
-	<!--#region TextBlock-->
-	<Style x:Key="TextTextBlockStyleBase"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextBlockStyleBase}">
-		<Setter Property="TextWrapping"
-				Value="Wrap" />
-	</Style>
-	<Style x:Key="PrimaryTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource Primary700SolidColorBrushStyle}" />
-		<Setter Property="FontSize"
-				Value="26" />
-	</Style>
-	<Style x:Key="SecondaryTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource Primary600SolidColorBrushStyle}" />
-		<Setter Property="FontSize"
-				Value="24" />
-	</Style>
-	<Style x:Key="TertiaryTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource Primary500SolidColorBrushStyle}" />
-		<Setter Property="FontSize"
-				Value="20" />
-	</Style>
-	<Style x:Key="FourthTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource Primary400SolidColorBrushStyle}" />
-		<Setter Property="FontSize"
-				Value="18" />
-	</Style>
-	<Style x:Key="FifthTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TextTextBlockStyleBase}">
-		<Setter Property="Foreground"
-				Value="{StaticResource Primary300SolidColorBrushStyle}" />
-		<Setter Property="FontSize"
-				Value="16" />
-	</Style>
-	<Style x:Key="TreeViewItemTextBlockStyleBase"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource AssistIconFontTextBlockStyle}">
-		<Setter Property="FontSize"
-				Value="26" />
-		<Setter Property="Text"
-				Value="{Binding  Path=Header ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}" />
-		<Style.Triggers>
-			<DataTrigger Binding="{Binding Path=IsMouseOver ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}"
-						 Value="True">
-				<Setter Property="Foreground"
-						Value="{StaticResource   Primary400SolidColorBrushStyle}" />
-			</DataTrigger>
-			<DataTrigger Binding="{Binding Path=IsSelected ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}"
-						 Value="True">
-				<Setter Property="Foreground"
-						Value="{StaticResource   Primary400SolidColorBrushStyle}" />
-			</DataTrigger>
-		</Style.Triggers>
-	</Style>
-	<Style x:Key="TreeViewItemIconTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TreeViewItemTextBlockStyleBase}" />
-	<Style x:Key="TreeViewItemHeadTextBlockStyle"
-		   TargetType="TextBlock"
-		   BasedOn="{StaticResource TreeViewItemTextBlockStyleBase}" />
-	<!--#endregion-->
+                <Setter Property="FontSize"
+                        Value="25" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+    <!--#endregion-->
+    <!--#region TextBlock-->
+    <Style x:Key="TextTextBlockStyleBase"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextBlockStyleBase}">
+        <Setter Property="TextWrapping"
+                Value="Wrap" />
+    </Style>
+    <Style x:Key="PrimaryTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource Primary700SolidColorBrushStyle}" />
+        <Setter Property="FontSize"
+                Value="26" />
+    </Style>
+    <Style x:Key="SecondaryTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource Primary600SolidColorBrushStyle}" />
+        <Setter Property="FontSize"
+                Value="24" />
+    </Style>
+    <Style x:Key="TertiaryTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource Primary500SolidColorBrushStyle}" />
+        <Setter Property="FontSize"
+                Value="20" />
+    </Style>
+    <Style x:Key="FourthTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource Primary400SolidColorBrushStyle}" />
+        <Setter Property="FontSize"
+                Value="18" />
+    </Style>
+    <Style x:Key="FifthTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TextTextBlockStyleBase}">
+        <Setter Property="Foreground"
+                Value="{StaticResource Primary300SolidColorBrushStyle}" />
+        <Setter Property="FontSize"
+                Value="16" />
+    </Style>
+    <Style x:Key="TreeViewItemTextBlockStyleBase"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource AssistIconFontTextBlockStyle}">
+        <Setter Property="FontSize"
+                Value="26" />
+        <Setter Property="Text"
+                Value="{Binding  Path=Header ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}" />
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding Path=IsMouseOver ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}"
+                         Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource   Primary400SolidColorBrushStyle}" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsSelected ,RelativeSource={RelativeSource AncestorType={x:Type TreeViewItem}}}"
+                         Value="True">
+                <Setter Property="Foreground"
+                        Value="{StaticResource   Primary400SolidColorBrushStyle}" />
+            </DataTrigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="TreeViewItemIconTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TreeViewItemTextBlockStyleBase}" />
+    <Style x:Key="TreeViewItemHeadTextBlockStyle"
+           TargetType="TextBlock"
+           BasedOn="{StaticResource TreeViewItemTextBlockStyleBase}" />
+    <!--#endregion-->
 </ResourceDictionary>

@@ -95,7 +95,49 @@
                 </StackPanel>
             </hc:TabItem>
             <hc:TabItem Header="TabItem6">
-                <hc:SimplePanel Background="#FF3FE8E8" />
+                <StackPanel Orientation="Vertical">
+                    <WrapPanel Background="Yellow"
+                               x:Name="ChipPanel"
+                               Height="300"
+                               Width="300">
+                        <materialDesign:Chip Content="James Willock"
+                                             IsDeletable="True"
+                                             Background="White"
+                                             BorderBrush="Black"
+                                             BorderThickness="3"
+                                             DeleteCommand="{Binding DeleteChipCmd}"
+                                             DeleteCommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"
+                                             IconBackground="Red"
+                                             ToolTip="Just a tool tip"
+                                             DeleteToolTip="Your friendly neighbour delete button">
+                            <materialDesign:Chip.Icon>
+                                <Image Source="/Resources/Naruto0.jpg" />
+                            </materialDesign:Chip.Icon>
+                        </materialDesign:Chip>
+                        <materialDesign:Chip Content="James Willock1212"
+                                             IsDeletable="True"
+                                             Background="White"
+                                             BorderBrush="Black"
+                                             BorderThickness="3"
+                                             DeleteCommand="{Binding TestDeleteChipCmd}"
+                                             DeleteCommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"
+                                             IconBackground="Red"
+                                             ToolTip="Just a tool tip"
+                                             DeleteToolTip="Your friendly neighbour delete button">
+                            <!--<materialDesign:Chip.DeleteCommandParameter>
+                                <MultiBinding Converter="">
+                                    <Binding ElementName="ChipPanel" />
+                                    <Binding RelativeSource="{RelativeSource Mode=Self}" />
+                                </MultiBinding>
+                            </materialDesign:Chip.DeleteCommandParameter>-->
+                            <materialDesign:Chip.Icon>
+                                <Image Source="/Resources/Naruto0.jpg"></Image>
+                            </materialDesign:Chip.Icon>
+                        </materialDesign:Chip>
+                    </WrapPanel>
+                    <Button Command="{Binding AddChipCmd}"
+                            CommandParameter="{Binding ElementName=ChipPanel}">添加Chip</Button>
+                </StackPanel>
             </hc:TabItem>
             <hc:TabItem Header="TabItem7">
                 <hc:SimplePanel Background="#FFE8E03F" />

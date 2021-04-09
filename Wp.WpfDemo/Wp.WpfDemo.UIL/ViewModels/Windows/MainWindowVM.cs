@@ -1,15 +1,10 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using HandyControl.Controls;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using Wp.Helpers;
+using Wp.Helpers.Helpers;
 using Wp.WpfDemo.Model.Entities;
 using Wp.WpfDemo.Model.Enums;
 

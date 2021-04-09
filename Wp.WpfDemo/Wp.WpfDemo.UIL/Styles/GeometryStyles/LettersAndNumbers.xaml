@@ -1,622 +1,622 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	<ResourceDictionary.MergedDictionaries>
-		<ResourceDictionary Source="/Styles/ColorStyles.xaml" />
-	</ResourceDictionary.MergedDictionaries>
-	<SolidColorBrush x:Key="PrimarySolidColorBrushStyle"
-					 Color="{StaticResource Green500ColorStyle}" />
-	<SolidColorBrush x:Key="AssistSolidColorBrushStyle"
-					 Color="{StaticResource Grey600ColorStyle}" />
-	<Geometry x:Key="AGeometry">M517.4 63.4l-96.8 55.9 97.5 55.9 96.1-55.9z M709.8 849.5l-96.9-55.9-192.3-674.2 97.5 55.8z M614.2 119.3l192.4 674.3-96.8 55.9-191.7-674.3z M516.6 400.8l-193 110.6 97.5 55.9 192.3-110.6z M420.4 679.1l-96.8-55.9V511.4l97.5 55.9z M613.4 456.7l34.5 101.4-227.5 121 0.7-111.8z M517.5 63.7l-96.8 55.9 97.5 55.9 96.1-55.9z M314.2 960.6l-96.8-55.9 203.3-785.1 97.5 55.9z M614.3 119.6L411.1 904.7l-96.9 55.9 204-785.1z</Geometry>
-	<DrawingImage x:Key="A">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource AGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ANormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource AGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="BGeometry">M675.6 394.1L594 441.2l82.2 47.1 81-47.1z M675.6 677.6L594 630.4V441.2l82.2 47.1z M757.2 441.2v189.3l-81.6 47.1 0.6-189.3z M675.6 110.6L594 157.7l82.2 47.2 81-47.2z M675.6 394.1L594 347V157.8l82.2 47.1z M757.2 157.7V347l-81.6 47.1 0.6-189.2z M594 346.4L348.7 487.3l82.2 47.1 244.7-140.8z M430.3 628.7l-81.6-47.2v-94.2l82.2 47.1z M675.6 393.6v94.2L430.3 628.7l0.6-94.3z M592 630.5L346.9 772.8l82.2 47.1 244.5-142.3z M428.5 914.2L346.9 867v-94.2l82.2 47.1z M673.6 677.6v94.3L428.5 914.2l0.6-94.3z M348.6 299.3l-81.7 47.1 82.2 47.2 81.1-47.2z M348.6 959.8l-81.7-47.1V346.5l82.2 47.1z M430.2 346.4v566.3l-81.6 47.1 0.5-566.2z M593.5 64.2L266.8 252l82.1 47.1 326.2-187.8z M348.4 393.4l-81.6-47.1V252l82.1 47.1z M675.1 111.3v94.2L348.4 393.4l0.5-94.3z</Geometry>
-	<DrawingImage x:Key="B">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource BGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="BNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource BGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="CGeometry">M675.5 629.7L348 818.1l81.9 47 327-188.4z M429.4 959.1l-81.4-47v-94l81.9 47z M756.9 676.7v94L429.4 959.1l0.5-94z M348.5 347.3l-81.4 47 81.9 47 80.9-47z M348.5 911.9l-81.4-47V394.3l81.9 47z M429.9 394.3v470.6l-81.4 47 0.5-470.6z M674.4 64.9L347.9 253l82 47 325.9-188.1z M429.3 394l-81.4-47v-94l82 47z M755.8 111.9v94L429.3 394l0.6-94z</Geometry>
-	<DrawingImage x:Key="C">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource CGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="CNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource CGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="DGeometry">M727.5 113.9l-86.1 49.7 86.7 49.8 85.5-49.8z M727.5 611.4l-86.1-49.7v-398l86.7 49.7z M813.6 163.6v398.2l-86.1 49.6 0.6-398z M641.6 562L296.7 761.2l86.7 49.7 344.3-199.2z M382.8 910.3l-86.1-49.7v-99.4l86.7 49.7z M727.7 611.7v99.4L382.8 910.3l0.6-99.4z M641.6 64L296.7 263.2l86.7 49.7 344.3-199.2z M382.8 412.3l-86.1-49.7v-99.4l86.7 49.7z M727.7 113.7v99.4L382.8 412.3l0.6-99.4z M296.5 263.4l-86.1 49.7 86.7 49.7 85.5-49.7z M296.5 960l-86.1-49.7V313.2l86.7 49.6z M382.6 313.1v597.2L296.5 960l0.6-597.2z</Geometry>
-	<DrawingImage x:Key="D">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource DGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="DNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource DGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="EGeometry">M635.3 631.7L387 773.1l82.8 47.4 247.6-141.4z M469.2 915.4L387 868v-94.9l82.8 47.4z M717.4 679.1V774L469.2 915.4l0.6-94.9z M635.3 348.1L306.6 535.5l82.7 47.4 328.1-187.4z M388.7 677.8l-82.1-47.4v-94.9l82.7 47.4z M717.4 395.5v94.9L388.7 677.8l0.6-94.9z M388.7 296.5l-82.1 47.4 82.7 47.4 81.6-47.4z M388.7 961.4L306.6 914V343.9l82.7 47.4z M470.9 343.9V914l-82.2 47.4 0.6-570.1z M635.3 62.6L306.6 248.1l82.7 47.4L717.4 110z M388.7 390.4L306.6 343v-94.9l82.7 47.4z M717.4 110v94.9L388.7 390.4l0.6-94.9z</Geometry>
-	<DrawingImage x:Key="E">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource EGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ENormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource EGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="EightGeometry">M633.9 64.3l-81.7 47.2 82.3 47.2 81.1-47.2z M633.9 820.6l-81.7-47.1v-662l82.3 47.2z M715.6 111.5v662l-81.7 47.1 0.6-661.9z M552 675.8l-163.6 96.7 82.3 47.1 163-96.7z M470.1 914l-81.7-47.2v-94.3l82.3 47.1z M633.7 722.9v94.4L470.1 914l0.6-94.4z M552 393.9L308.4 536.3l82.3 47.1 243-142.4z M390.1 677.8l-81.7-47.2v-94.3l82.3 47.1z M633.7 441v94.4L390.1 677.8l0.6-94.4z M390.1 298.6l-81.7 47.2 82.3 47.1 81.1-47.1z M390.1 959.7l-81.7-47.2V345.8l82.3 47.1z M471.8 345.8v566.7l-81.7 47.2 0.6-566.8z M552 110L308.4 250.5l82.3 47.2 243-140.5z M390.1 392l-81.7-47.1v-94.3l82.3 47.1z M633.7 157.2v94.4L390.1 392l0.6-94.3z</Geometry>
-	<DrawingImage x:Key="Eight">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource EightGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="EightNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource EightGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="FGeometry">M634.8 348.7L307.4 535.4l82.4 47.3L716.6 396z M389.2 677.2l-81.8-47.3v-94.5l82.4 47.3z M716.6 396v94.5L389.2 677.2l0.6-94.5z M389.2 297.3l-81.8 47.3 82.4 47.2 81.3-47.2z M389.2 959.6l-81.8-47.2V344.6l82.4 47.2z M471.1 344.6l-0.1 567.8-81.8 47.2 0.6-567.8z M634.8 64.4L307.4 249.1l82.4 47.3 326.8-184.8z M389.2 390.9l-81.8-47.3v-94.5l82.4 47.3z M716.6 111.6v94.5L389.2 390.9l0.6-94.5z</Geometry>
-	<DrawingImage x:Key="F">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource FGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="FNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource FGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="FiveGeometry">M634.7 629l-327 189.7 82.2 47.1L716.3 676z M389.3 960l-81.6-47.1v-94.2l82.2 47.1z M716.3 676v94.3L389.3 960l0.6-94.2z M634.7 345.5l-81.6 47.1 82.2 47.1 81-47.1z M634.7 722.2l-81.6-47.1V392.6l82.2 47.1z M716.3 392.6v282.6l-81.6 47 0.6-282.5z M551 391.2L307.7 533.4l82.2 47.1 242.7-142.2z M389.3 674.7l-81.6-47.1v-94.2l82.2 47.1z M632.6 438.3v94.2L389.3 674.7l0.6-94.2z M389.3 204.8l-81.6 47.1 82.2 47.1 81-47.1z M389.3 581.5l-81.6-47.1V251.9l82.2 47.1z M470.9 251.9v282.5l-81.6 47.1 0.6-282.5z M632.8 64L307.7 248.1l82.2 47.1 324.5-184.1z M389.3 389.3l-81.6-47.1v-94.1l82.2 47.1z M714.4 111.1v94.2l-325.1 184 0.6-94.1z</Geometry>
-	<DrawingImage x:Key="Five">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource FiveGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="FiveNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource FiveGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="FourGeometry">M640 64.8l-85.8 49.5 86.4 49.6 85.2-49.6z M640 959.2l-85.8-49.5 0.1-795.4 86.3 49.6z M725.8 114.3v795.4L640 959.2l0.6-795.3z M554 410.9L298.2 560.5l86.3 49.5 255.3-149.5z M384 709.1l-85.8-49.5v-99.1l86.3 49.5z M639.8 460.5v99.1L384 709.1l0.5-99.1z M384 214.9l-85.8 49.5 86.3 49.5 85.3-49.5z M384 707.1l-85.8-49.5V264.4l86.3 49.5z M469.8 264.4l-0.1 393.2-85.7 49.5 0.5-393.2z</Geometry>
-	<DrawingImage x:Key="Four">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource FourGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="FourNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource FourGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="GGeometry">M685.1 509.1L598.6 559l87.1 50 85.8-50z M685.1 710.1l-86.5-49.9V559.1l87.1 49.9z M771.5 559v101.2l-86.4 49.9 0.6-101.1z M597.3 660.1L337.7 810.8l87.1 49.9 259-150.7z M424.2 960.6l-86.5-49.9v-99.9l87.1 49.9z M683.8 710v99.9L424.2 960.6l0.6-99.9z M338.9 310.3l-86.4 49.9 87 49.9 85.9-49.9z M338.9 909.1l-86.4-49.9v-499l87 49.9z M425.4 360.2v499l-86.5 49.9 0.6-499z M597.5 63.4l-258.6 147 87.1 49.9 258-147z M425.4 360.1l-86.5-49.9v-99.8l87.1 49.9z M684 113.3v99.9L425.4 360.1l0.6-99.8z M685.1 409.2l-173 100.4 87 49.9 172.4-100.4z M598.5 659.3l-86.4-49.9v-99.8l87 49.9z M771.5 459.1V559l-173 100.3 0.6-99.8z</Geometry>
-	<DrawingImage x:Key="G">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource GGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="GNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource GGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="HGeometry">M685.2 62.7l-86.3 49.8 86.9 49.8 85.7-49.8z M685.2 860.9l-86.3-49.8V112.5l86.9 49.8z M771.5 112.5v698.6l-86.3 49.8 0.6-698.6z M598.5 369.4L252.6 571.5l86.9 49.8 345.3-202.1z M338.9 721l-86.3-49.9v-99.6l86.9 49.8z M684.8 419.2v99.7L338.9 721l0.6-99.7z M338.8 163.1l-86.3 49.8 86.9 49.8 85.7-49.8z M338.8 961.3l-86.3-49.8V212.9l86.9 49.8z M425.1 212.9v698.6l-86.3 49.8 0.6-698.6z</Geometry>
-	<DrawingImage x:Key="H">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource HGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="HNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource HGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="IGeometry">M598.1 64.2l-86 49.7 86.6 49.7 85.5-49.7z M598.1 263l-86-49.7v-99.4l86.6 49.7z M684.2 113.9v99.5L598.1 263l0.6-99.4z M598.1 661.1l-86 49.7 86.6 49.7 85.5-49.7z M598.1 859.9l-86-49.7v-99.4l86.6 49.7z M684.2 710.8v99.4l-86.1 49.7 0.6-99.4z M511.9 113.5l-86 49.7 86.6 49.7 85.5-49.7z M511.7 909.4l-86.1-49.7 0.3-696.5 86.6 49.7z M598 163.2l-0.2 696.5-86.1 49.7 0.8-696.5z M425.9 761l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 959.8l-86.1-49.7v-99.4l86.6 49.7z M511.9 810.7v99.4l-86 49.7 0.5-99.4z M425.9 163.6l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 362.5l-86.1-49.7v-99.4l86.6 49.6z M511.9 213.3v99.5l-86 49.7 0.5-99.5z</Geometry>
-	<DrawingImage x:Key="I">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource IGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="INormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource IGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="JGeometry">M612.5 200.3L525 250.8l88.1 50.5 86.9-50.5z M612.5 806.8L525 756.3l0.1-505.5 88 50.5z M700 250.8v505.5l-87.5 50.5 0.6-505.5z M524.8 655.3l-263 154.1 88.1 50.5 262.4-154.1z M349.3 960.9l-87.5-50.5v-101l88.1 50.5z M612.3 705.8v101l-263 154.1 0.6-101z M674.7 63.1L413.8 213.6l88.1 50.5 260.3-150.5z M501.3 365.1l-87.5-50.5v-101l88.1 50.5z M762.2 113.6v101.1L501.3 365.1l0.6-101z M349.3 656.5l-87.5 50.6 88.1 50.5 86.8-50.5z M349.3 858.6l-87.5-50.5v-101l88.1 50.5z M436.7 707.1v101l-87.4 50.5 0.6-101z</Geometry>
-	<DrawingImage x:Key="J">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource JGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="JNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource JGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="KGeometry">M557.4 433L466 485.8l92 52.7 90.8-52.7z M649.1 802.6l-91.4-52.7L466 485.8l92 52.7z M648.8 485.8l91.7 264.1-91.4 52.7L558 538.5z M466.3 380L283 485.8l92 52.7 182.6-105.7z M374.4 644L283 591.3V485.8l92 52.7z M557.6 432.8v105.5L374.4 644l0.6-105.5z M374.6 115.9l-91.3 52.8 92 52.7 90.7-52.7z M374.6 961l-91.3-52.8V168.7l92 52.7z M466 168.7v739.6L374.6 961l0.7-739.6z M649.6 63l-91.4 52.8 92 52.7 90.8-52.7z M557.9 432.7L466.5 380l91.7-264.2 92 52.7z M741 115.8L649.2 380l-91.3 52.7 92.3-264.2z</Geometry>
-	<DrawingImage x:Key="K">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource KGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="KNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource KGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="LGeometry">M657.5 567.6L271 792.1l97.5 55.8 385.7-224.5z M367.8 959.7L271 903.8V792.1l97.5 55.8z M754.2 623.4v111.8L367.8 959.7l0.7-111.8z M366.5 64.3l-96.7 55.9 97.4 55.9 96.1-55.9z M366.5 959.1l-96.7-55.9v-783l97.4 55.9z M463.3 120.2v783.1l-96.8 55.8 0.7-783z</Geometry>
-	<DrawingImage x:Key="L">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource LGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="LNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource LGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="MGeometry">M597.6 64.3l-86 49.7 86.6 49.7 85.5-49.7z M770.4 661.3l-86.1-49.6L511.6 114l86.6 49.7z M683.7 114l172.7 497.7-86 49.6-172.2-497.6z M597.1 64.5l-86 49.7 86.6 49.7 85.5-49.7z M511.6 808.6l-86-49.6 85.5-644.8 86.6 49.7z M683.2 114.2L597.6 759l-86 49.6 86.1-644.7z M253.6 162.3l-86 49.7 86.6 49.6 85.5-49.6z M511.9 808.6l-86-49.7L167.6 212l86.6 49.6z M339.7 212L598 759l-86.1 49.6-257.7-547z M254 162.3L168 212l86.6 49.6L340 212z M254 959.7L168 910V212l86.6 49.6z M340 212v698l-86 49.7 0.6-698.1z</Geometry>
-	<DrawingImage x:Key="M">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource MGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="MNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource MGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="NGeometry">M635.2 61.6l-81.9 47.3 82.5 47.3 81.3-47.3z M635.2 820.9l-81.9-47.3V108.9l82.5 47.3z M717.1 108.9v664.7l-81.9 47.3 0.6-664.7z M388.8 203.1l-81.9 47.3 82.5 47.3 81.3-47.3z M634.8 818.5l-81.9-47.3-246-520.8 82.5 47.3z M470.7 250.4l246 520.9-81.9 47.2-245.4-520.8z M389.1 203.1l-81.9 47.3 82.5 47.3 81.3-47.3z M389.1 962.4l-81.9-47.3V250.4l82.5 47.3z M471 250.4v664.7l-81.9 47.3 0.6-664.7z</Geometry>
-	<DrawingImage x:Key="N">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource NGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="NNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource NGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="NineGeometry">M633.9 64.3l-81.7 47.2 82.3 47.2 81.1-47.2z M633.9 820.6l-81.7-47.1v-662l82.3 47.2z M715.6 111.5v662l-81.7 47.1 0.6-661.9z M552 675.8L308.4 818.2l82.3 47.1 243-142.4z M390.1 959.7l-81.7-47.2v-94.3l82.3 47.1z M633.7 722.9v94.4L390.1 959.7l0.6-94.4z M552 393.9L308.4 536.3l82.3 47.1 243-142.4z M390.1 677.8l-81.7-47.2v-94.3l82.3 47.1z M633.7 441v94.4L390.1 677.8l0.6-94.4z M390.1 298.6l-81.7 47.2 82.3 47.1 81.1-47.1z M390.1 675.8l-81.7-47.1V345.8l82.3 47.1z M471.8 345.8v282.9l-81.7 47.1 0.6-282.9z M552 110L308.4 250.5l82.3 47.2 243-140.5z M390.1 392l-81.7-47.1v-94.3l82.3 47.1z M633.7 157.2v94.4L390.1 392l0.6-94.3z</Geometry>
-	<DrawingImage x:Key="Nine">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource NineGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="NineNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource NineGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="OGeometry">M740.1 116.9L649 169.5l91.8 52.6 90.5-52.6z M740.1 643.6L649 591V169.5l91.8 52.6z M831.3 169.5V591l-91.2 52.6 0.7-421.5z M649.1 591.2L283.9 802.1l91.8 52.6 364.6-210.9z M375.1 960l-91.2-52.6 0.1-105.3 91.7 52.6z M740.3 643.8v105.3L375.1 960l0.6-105.3z M649.1 64L283.9 274.9l91.8 52.6 364.6-210.9z M375.1 432.8l-91.2-52.6 0.1-105.3 91.7 52.6z M740.3 116.6v105.3L375.1 432.8l0.6-105.3z M283.9 380.5l-91.2 52.6 91.8 52.6 90.5-52.6z M283.9 907.2l-91.2-52.6V433.1l91.8 52.6z M375 433.1v421.5l-91.1 52.6 0.6-421.5z</Geometry>
-	<DrawingImage x:Key="O">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource OGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ONormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource OGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="OneGeometry">M598.1 661.1l-86 49.7 86.6 49.7 85.5-49.7z M598.1 859.9l-86-49.7v-99.4l86.6 49.7z M684.2 710.8v99.4l-86.1 49.7 0.6-99.4z M511.9 113.5l-86 49.7 86.6 49.7 85.5-49.7z M511.7 909.4l-86.1-49.7 0.3-696.5 86.6 49.7z M598 163.2l-0.2 696.5-86.1 49.7 0.8-696.5z M425.9 761l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 959.8l-86.1-49.7v-99.4l86.6 49.7z M511.9 810.7v99.4l-86 49.7 0.5-99.4z M425.9 163.6l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 362.5l-86.1-49.7v-99.4l86.6 49.6z M511.9 213.3v99.5l-86 49.7 0.5-99.5z</Geometry>
-	<DrawingImage x:Key="One">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource OneGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="OneNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource OneGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="PGeometry">M594.5 441.6L347.8 583.2l82.3 47.2 246.1-141.7z M429.5 724.7l-81.7-47.2v-94.3l82.3 47.2z M676.2 488.7v94.4L429.5 724.7l0.6-94.3z M676.2 110.8l-81.7 47.1 82.2 47.1 81.1-47.1z M676.2 488.4l-81.7-47.1V157.9l82.2 47.1z M757.8 157.9v283.4l-81.6 47.1 0.5-283.4z M593.7 63.6L347.8 205.2l82.3 47.2 245.3-141.6z M429.5 346.7l-81.7-47.2v-94.3l82.3 47.2z M675.4 110.8v94.3L429.5 346.7l0.6-94.3z M347.8 299.6l-81.6 47.1 82.2 47.2 81.1-47.2z M347.8 960.4l-81.6-47.2V346.8l82.2 47.1z M429.5 346.7v566.6l-81.7 47.1 0.6-566.5z</Geometry>
-	<DrawingImage x:Key="P">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource PGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="PNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource PGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="QGeometry">M684.3 109.4l-86 49.6 86.6 49.6 85.3-49.6z M684.3 909.4l-86-49.6 0.1-700.8 86.5 49.6z M770.2 159v700.8l-85.9 49.6 0.6-700.8z M598.3 561.8L253.9 760.7l86.6 49.6 343.7-198.8z M339.9 909.6l-86-49.7 0.1-99.2 86.5 49.6z M684.2 611.5v99.2L339.9 909.6l0.6-99.3z M598.3 64.7L253.9 263.6l86.6 49.6 343.7-198.8z M339.9 412.5l-86-49.7 0.1-99.2 86.5 49.6z M684.2 114.4v99.2L339.9 412.5l0.6-99.3z M253.9 363.1l-86 49.7 86.6 49.6 85.3-49.6z M253.9 859.8l-86-49.6V412.8l86.6 49.6z M339.8 412.8v397.4l-85.9 49.6 0.6-397.4z M770.1 760.8l-85.9 49.6 86.5 49.6 85.4-49.6z M770.1 959.3l-85.9-49.7v-99.2l86.5 49.6z M856.1 810.4v99.3l-86 49.6 0.6-99.3z</Geometry>
-	<DrawingImage x:Key="Q">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource QGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="QNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource QGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="RGeometry">M593.1 535.7L512 582.5l81.7 46.9 80.6-46.9z M674.7 770l-81.2-46.9L512 582.5l81.7 46.9z M674.3 582.5l81.6 140.6-81.2 46.9-81-140.6z M593 440.1L349.2 582.5l81.7 46.9 243.2-142.5z M430.3 723.1l-81.1-46.9v-93.7l81.7 46.9z M674.1 486.9v93.8L430.3 723.1l0.6-93.7z M674.1 112.9L593 159.7l81.7 46.9 80.6-46.9z M674.1 488.3L593 441.4V159.7l81.7 46.9z M755.3 159.7v281.7l-81.2 46.9 0.6-281.7z M593 64.3L349.2 206.8l81.7 46.8 243.2-142.4z M430.3 347.4l-81.1-46.9v-93.7l81.7 46.8z M674.1 111.2v93.7L430.3 347.4l0.6-93.8z M349.3 299.1l-81.2 46.8 81.8 46.9 80.6-46.9z M349.3 959.7l-81.2-46.9V345.9l81.8 46.9z M430.5 345.9v566.9l-81.2 46.9 0.6-566.9z</Geometry>
-	<DrawingImage x:Key="R">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource RGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="RNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource RGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="SGeometry">M634.5 440.8l-81.6 47.1 82.2 47.2 81.1-47.2z M634.5 724.3l-81.6-47.1V487.9l82.2 47.2z M716.2 487.9v189.3l-81.7 47.1 0.6-189.2z M635.8 348.8l-327 188.1L391 584l326.4-188z M390.4 678.3l-81.6-47.2v-94.2L391 584z M717.4 396v94.2l-327 188.1 0.6-94.3z M553 676.9L306.6 818.5l82.1 47.1 246-141.6z M388.2 959.8l-81.6-47.1v-94.2l82.1 47.1z M634.7 724v94.3L388.2 959.8l0.5-94.2z M634.5 64.2L389.2 205l82.2 47.1 244.8-140.8z M470.9 346.4l-81.7-47.2V205l82.2 47.1z M716.2 111.3v94.2L470.9 346.4l0.5-94.3z M390.4 299.9L308.8 347l82.2 47.1 81-47.1z M390.4 583.4l-81.6-47.2V347l82.2 47.1z M472 347v189.3l-81.6 47.1 0.6-189.3z</Geometry>
-	<DrawingImage x:Key="S">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource SGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="SNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource SGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="SevenGeometry">M640.2 64.3l-85.9 49.6 86.5 49.6 85.3-49.6z M640.2 959.7l-85.9-49.6V113.9l86.5 49.6z M726.1 113.9v796.2l-85.9 49.6 0.6-796.2z M554.1 114.4L297.9 262.1l86.5 49.6L639.9 164z M383.8 410.9l-85.9-49.6v-99.2l86.5 49.6z M639.9 164v99.2L383.8 410.9l0.6-99.2z</Geometry>
-	<DrawingImage x:Key="Seven">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource SevenGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="SevenNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource SevenGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="SixGeometry">M634 346.1l-81.7 47.2 82.3 47.2 81.1-47.2z M634 818.9l-81.7-47.2V393.3l82.3 47.2z M715.7 393.3v378.5L634 818.9l0.6-378.4z M552 675.9l-163.7 96.8 82.3 47.2 163.2-96.8z M470.1 914.3l-81.8-47.2v-94.4l82.3 47.2z M633.8 723.1v94.4l-163.7 96.8 0.5-94.4z M552 393.8L308.3 536.3l82.3 47.2L633.8 441z M390 677.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441v94.4L390 677.9l0.6-94.4z M390 298.5l-81.7 47.2 82.3 47.2 81.1-47.2z M390 960l-81.7-47.2V345.7l82.3 47.2z M471.7 345.7v567.1L390 960l0.6-567.1z M634 64L308.3 250.4l82.3 47.1 325.1-186.3z M390 391.9l-81.7-47.2v-94.3l82.3 47.1z M715.7 111.2v94.4L390 391.9l0.6-94.4z</Geometry>
-	<DrawingImage x:Key="Six">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource SixGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="SixNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource SixGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="TGeometry">M546.5 158.2l-99.1 57.2 99.8 57.2 98.4-57.2z M546.5 960.9l-99.1-57.2V215.4l99.8 57.2z M645.6 215.4v688.3l-99.1 57.2 0.7-688.3z M710.9 63.1L214 349.6l99.8 57.2L810 120.3z M313.1 521.3L214 464V349.6l99.8 57.2z M810 120.3v114.5L313.1 521.3l0.7-114.5z</Geometry>
-	<DrawingImage x:Key="T">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource TGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="TNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource TGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="ThreeGeometry">M634 64.1l-81.8 47.2 82.3 47.1 81.2-47.1z M634 820.8l-81.8-47.2 0.1-662.3 82.2 47.1z M715.7 111.3v662.3L634 820.8l0.5-662.4z M552 675.9L308.3 818.4l82.3 47.2 243.2-142.5z M390 959.9l-81.7-47.2v-94.3l82.3 47.2z M633.8 723.1v94.4L390 959.9l0.6-94.3z M552 393.8L308.3 536.3l82.3 47.2L633.8 441z M390 677.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441v94.4L390 677.9l0.6-94.4z M552 109.8L308.3 250.4l82.3 47.2L633.8 157z M390 392l-81.7-47.2v-94.4l82.3 47.2z M633.8 157v94.4L390 392l0.6-94.4z</Geometry>
-	<DrawingImage x:Key="Three">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource ThreeGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ThreeNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource ThreeGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="TwoGeometry">M634.1 631.2L308.2 819.5l82.3 47.2 325.3-188.3z M389.9 961.2L308.2 914v-94.5l82.3 47.2z M715.8 678.4v94.4L389.9 961.2l0.6-94.5z M389.9 583.5l-81.7 47.2 82.3 47.2 81.2-47.2z M389.9 961.2L308.2 914V630.7l82.3 47.2z M471.7 630.7V914l-81.8 47.2 0.6-283.3z M634.1 62.8L552.3 110l82.3 47.3 81.2-47.3z M634.1 535.9l-81.8-47.2V110.1l82.3 47.2z M715.8 110v378.7l-81.7 47.2 0.5-378.6z M552.1 394.7L308.2 537.3l82.3 47.2 243.3-142.6z M389.9 678.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441.9v94.5L389.9 678.9l0.6-94.4z M552.1 110.5L308.2 251.2l82.3 47.2 243.3-140.7z M389.9 392.8l-81.7-47.2v-94.4l82.3 47.2z M633.8 157.7v94.5L389.9 392.8l0.6-94.4z</Geometry>
-	<DrawingImage x:Key="Two">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource TwoGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="TwoNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource TwoGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="UGeometry">M694.1 65.6l-91 52.6 91.6 52.5 90.4-52.5z M694.1 697l-91-52.6V118.2l91.6 52.5z M785.1 118.2v526.3l-91 52.5 0.6-526.3z M603.1 644.4L329.9 800.7l91.7 52.6L694.1 697z M420.9 958.4l-91-52.6V800.7l91.7 52.6z M694.1 697v105.1L420.9 958.4l0.7-105.1z M329.9 164.8l-91 52.6 91.7 52.6 90.3-52.6z M329.9 907.7l-91-52.6V217.4l91.7 52.6z M420.9 217.4v637.7l-91 52.6 0.7-637.7z</Geometry>
-	<DrawingImage x:Key="U">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource UGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="UNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource UGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="VGeometry">M616.1 661.4l-103.3 59.7 104 59.7 102.6-59.7z M616.1 900.1l-103.3-59.7V721.1l104 59.7z M719.4 721.1v119.4l-103.3 59.6 0.7-119.3z M512.6 721.2l-103.3 59.7 104.1 59.6L616 780.9z M512.6 959.9l-103.3-59.7V780.9l104.1 59.6z M616 780.9v119.3l-103.4 59.7 0.8-119.4z M822.1 64.1l-103.4 59.7 104.1 59.7 102.6-59.7z M616.1 780.6L512.7 721l206-597.2 104.1 59.7z M925.4 123.8L719.4 721l-103.3 59.6 206.7-597.1z M201.9 184L98.6 243.6l104 59.7 102.7-59.7z M512.6 840l-103.3-59.6L98.6 243.7l104 59.6z M305.3 243.6l310.6 536.8L512.6 840l-310-536.7z</Geometry>
-	<DrawingImage x:Key="V">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource VGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="VNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource VGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="WGeometry">M727.9 66l-86.5 49.9 87.1 49.9 85.9-49.9z M643.6 800.3l-86.5-49.9 84.3-634.5 87.1 49.9z M814.4 115.9L730 750.4l-86.4 49.9 84.9-634.5z M560 463.5l-85.9 49.6 86.5 49.5 85.2-49.5z M645.9 809.7L560 760.2l-85.9-247.1 86.5 49.5z M645.8 513.1l85.9 247.1-85.8 49.5-85.3-247.1z M557.3 463l-88.1 50.9 88.7 50.9 87.6-50.9z M386 956.3l-88.2-50.9L469.2 514l88.7 50.8z M645.5 513.9L474.1 905.4 386 956.3l171.9-391.5z M297.8 213.2l-88.2 50.9 88.8 50.9 87.6-50.9z M386 958l-88.2-50.9-88.2-643 88.8 50.9z M386 264.1l88.1 643.1L386 958l-87.6-643z</Geometry>
-	<DrawingImage x:Key="W">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource WGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="WNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource WGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="XGeometry">M563 482.4L459.8 542l104 59.6L666.3 542z M666.3 900.1L563 840.5 459.8 542l104 59.6z M666.3 542l103.3 298.5-103.3 59.6-102.5-298.5z M563.7 362.9l-103.3 59.6 104 59.6L667 422.5z M563.7 601.3l-103.3-59.6V422.5l104 59.6z M667 422.5l-0.1 119.2-103.2 59.6 0.7-119.2z M460.3 542.1l-103.2 59.6 104 59.6 102.5-59.6z M355.3 960.2l-103.2-59.6 105-298.9 104 59.6z M563.6 601.7l-105 298.9-103.3 59.6 105.8-298.9z M460.3 422.6l-103.2 59.6L461 541.8l102.6-59.6z M460.3 661l-103.2-59.6V482.2L461 541.8z M563.6 482.2v119.3L460.3 661l0.7-119.2z M668.7 63.8l-103.3 59.6 104 59.7 102.5-59.7z M563.7 481.9l-103.3-59.6 105-298.8 104 59.6z M771.9 123.4l-105 299-103.2 59.5 105.7-298.8z M357 123.6l-103.2 59.6 103.9 59.6 102.6-59.6z M460.3 541.3L357 481.7 253.8 183.2l103.9 59.6z M460.3 183.2l103.2 298.5-103.2 59.6-102.6-298.5z</Geometry>
-	<DrawingImage x:Key="X">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource XGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="XNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource XGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="YGeometry">M556.3 448.4l-88.3 51 88.9 51 87.8-51z M556.3 958.9l-88.3-51V499.4l88.9 51z M644.7 499.4v408.5l-88.4 51 0.6-408.5z M689.2 65.1l-88.3 51 88.9 51 87.7-51z M600.2 524.3l-88.4-51 89.1-357.2 88.9 51z M777.5 116.1l-89 357.2-88.3 51 89.6-357.2z M334.8 167.5l-88.3 51 88.9 51 87.7-51z M511.7 575.1l-88.3-51-176.9-305.6 88.9 51z M423.1 218.5l177 305.6-88.4 51-176.3-305.6z</Geometry>
-	<DrawingImage x:Key="Y">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource YGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="YNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource YGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="ZGeometry">M648.3 592L284.9 801.7l91.5 52.4 362.7-209.7z M375.7 959l-90.8-52.4V801.7l91.5 52.4z M739.1 644.4v104.9L375.7 959l0.7-104.9z M648.4 170.1l-90.8 52.4 91.4 52.4 90.2-52.4z M375.6 852.9l-90.8-52.5 272.8-577.9 91.4 52.4z M739.2 222.5L466.4 800.4l-90.8 52.5 273.4-578z M648.3 65L284.9 274.7l91.5 52.5 362.7-209.8z M375.7 432l-90.8-52.4V274.7l91.5 52.5z M739.1 117.4v104.9L375.7 432l0.7-104.8z</Geometry>
-	<DrawingImage x:Key="Z">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource ZGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ZNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource ZGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<Geometry x:Key="ZeroGeometry">M634 64.1l-81.8 47.2 82.3 47.1 81.2-47.1z M634 820.8l-81.8-47.2 0.1-662.3 82.2 47.1z M715.7 111.3v662.3L634 820.8l0.5-662.4z M552 675.9l-163.7 96.7 82.3 47.2 163.2-96.7z M470.1 914.2L388.3 867v-94.4l82.3 47.2z M633.8 723.1v94.4l-163.7 96.7 0.5-94.4z M390 298.5l-81.7 47.2 82.3 47.2 81.2-47.2z M390 959.9l-81.7-47.2v-567l82.3 47.2z M471.8 345.7l-0.1 567.1-81.7 47.1 0.6-567z M552 109.8L308.3 250.4l82.3 47.2L633.8 157z M390 392l-81.7-47.2v-94.4l82.3 47.2z M633.8 157v94.4L390 392l0.6-94.4z</Geometry>
-	<DrawingImage x:Key="Zero">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
-								 Geometry="{StaticResource ZeroGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
-	<DrawingImage x:Key="ZeroNormal">
-		<DrawingImage.Drawing>
-			<DrawingGroup>
-				<GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
-								 Geometry="{StaticResource ZeroGeometry}" />
-			</DrawingGroup>
-		</DrawingImage.Drawing>
-	</DrawingImage>
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="/Styles/ColorStyles.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    <SolidColorBrush x:Key="PrimarySolidColorBrushStyle"
+                     Color="{StaticResource Green500ColorStyle}" />
+    <SolidColorBrush x:Key="AssistSolidColorBrushStyle"
+                     Color="{StaticResource Grey600ColorStyle}" />
+    <Geometry x:Key="AGeometry">M517.4 63.4l-96.8 55.9 97.5 55.9 96.1-55.9z M709.8 849.5l-96.9-55.9-192.3-674.2 97.5 55.8z M614.2 119.3l192.4 674.3-96.8 55.9-191.7-674.3z M516.6 400.8l-193 110.6 97.5 55.9 192.3-110.6z M420.4 679.1l-96.8-55.9V511.4l97.5 55.9z M613.4 456.7l34.5 101.4-227.5 121 0.7-111.8z M517.5 63.7l-96.8 55.9 97.5 55.9 96.1-55.9z M314.2 960.6l-96.8-55.9 203.3-785.1 97.5 55.9z M614.3 119.6L411.1 904.7l-96.9 55.9 204-785.1z</Geometry>
+    <DrawingImage x:Key="A">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource AGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ANormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource AGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="BGeometry">M675.6 394.1L594 441.2l82.2 47.1 81-47.1z M675.6 677.6L594 630.4V441.2l82.2 47.1z M757.2 441.2v189.3l-81.6 47.1 0.6-189.3z M675.6 110.6L594 157.7l82.2 47.2 81-47.2z M675.6 394.1L594 347V157.8l82.2 47.1z M757.2 157.7V347l-81.6 47.1 0.6-189.2z M594 346.4L348.7 487.3l82.2 47.1 244.7-140.8z M430.3 628.7l-81.6-47.2v-94.2l82.2 47.1z M675.6 393.6v94.2L430.3 628.7l0.6-94.3z M592 630.5L346.9 772.8l82.2 47.1 244.5-142.3z M428.5 914.2L346.9 867v-94.2l82.2 47.1z M673.6 677.6v94.3L428.5 914.2l0.6-94.3z M348.6 299.3l-81.7 47.1 82.2 47.2 81.1-47.2z M348.6 959.8l-81.7-47.1V346.5l82.2 47.1z M430.2 346.4v566.3l-81.6 47.1 0.5-566.2z M593.5 64.2L266.8 252l82.1 47.1 326.2-187.8z M348.4 393.4l-81.6-47.1V252l82.1 47.1z M675.1 111.3v94.2L348.4 393.4l0.5-94.3z</Geometry>
+    <DrawingImage x:Key="B">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource BGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="BNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource BGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="CGeometry">M675.5 629.7L348 818.1l81.9 47 327-188.4z M429.4 959.1l-81.4-47v-94l81.9 47z M756.9 676.7v94L429.4 959.1l0.5-94z M348.5 347.3l-81.4 47 81.9 47 80.9-47z M348.5 911.9l-81.4-47V394.3l81.9 47z M429.9 394.3v470.6l-81.4 47 0.5-470.6z M674.4 64.9L347.9 253l82 47 325.9-188.1z M429.3 394l-81.4-47v-94l82 47z M755.8 111.9v94L429.3 394l0.6-94z</Geometry>
+    <DrawingImage x:Key="C">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource CGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="CNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource CGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="DGeometry">M727.5 113.9l-86.1 49.7 86.7 49.8 85.5-49.8z M727.5 611.4l-86.1-49.7v-398l86.7 49.7z M813.6 163.6v398.2l-86.1 49.6 0.6-398z M641.6 562L296.7 761.2l86.7 49.7 344.3-199.2z M382.8 910.3l-86.1-49.7v-99.4l86.7 49.7z M727.7 611.7v99.4L382.8 910.3l0.6-99.4z M641.6 64L296.7 263.2l86.7 49.7 344.3-199.2z M382.8 412.3l-86.1-49.7v-99.4l86.7 49.7z M727.7 113.7v99.4L382.8 412.3l0.6-99.4z M296.5 263.4l-86.1 49.7 86.7 49.7 85.5-49.7z M296.5 960l-86.1-49.7V313.2l86.7 49.6z M382.6 313.1v597.2L296.5 960l0.6-597.2z</Geometry>
+    <DrawingImage x:Key="D">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource DGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="DNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource DGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="EGeometry">M635.3 631.7L387 773.1l82.8 47.4 247.6-141.4z M469.2 915.4L387 868v-94.9l82.8 47.4z M717.4 679.1V774L469.2 915.4l0.6-94.9z M635.3 348.1L306.6 535.5l82.7 47.4 328.1-187.4z M388.7 677.8l-82.1-47.4v-94.9l82.7 47.4z M717.4 395.5v94.9L388.7 677.8l0.6-94.9z M388.7 296.5l-82.1 47.4 82.7 47.4 81.6-47.4z M388.7 961.4L306.6 914V343.9l82.7 47.4z M470.9 343.9V914l-82.2 47.4 0.6-570.1z M635.3 62.6L306.6 248.1l82.7 47.4L717.4 110z M388.7 390.4L306.6 343v-94.9l82.7 47.4z M717.4 110v94.9L388.7 390.4l0.6-94.9z</Geometry>
+    <DrawingImage x:Key="E">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource EGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ENormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource EGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="EightGeometry">M633.9 64.3l-81.7 47.2 82.3 47.2 81.1-47.2z M633.9 820.6l-81.7-47.1v-662l82.3 47.2z M715.6 111.5v662l-81.7 47.1 0.6-661.9z M552 675.8l-163.6 96.7 82.3 47.1 163-96.7z M470.1 914l-81.7-47.2v-94.3l82.3 47.1z M633.7 722.9v94.4L470.1 914l0.6-94.4z M552 393.9L308.4 536.3l82.3 47.1 243-142.4z M390.1 677.8l-81.7-47.2v-94.3l82.3 47.1z M633.7 441v94.4L390.1 677.8l0.6-94.4z M390.1 298.6l-81.7 47.2 82.3 47.1 81.1-47.1z M390.1 959.7l-81.7-47.2V345.8l82.3 47.1z M471.8 345.8v566.7l-81.7 47.2 0.6-566.8z M552 110L308.4 250.5l82.3 47.2 243-140.5z M390.1 392l-81.7-47.1v-94.3l82.3 47.1z M633.7 157.2v94.4L390.1 392l0.6-94.3z</Geometry>
+    <DrawingImage x:Key="Eight">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource EightGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="EightNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource EightGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="FGeometry">M634.8 348.7L307.4 535.4l82.4 47.3L716.6 396z M389.2 677.2l-81.8-47.3v-94.5l82.4 47.3z M716.6 396v94.5L389.2 677.2l0.6-94.5z M389.2 297.3l-81.8 47.3 82.4 47.2 81.3-47.2z M389.2 959.6l-81.8-47.2V344.6l82.4 47.2z M471.1 344.6l-0.1 567.8-81.8 47.2 0.6-567.8z M634.8 64.4L307.4 249.1l82.4 47.3 326.8-184.8z M389.2 390.9l-81.8-47.3v-94.5l82.4 47.3z M716.6 111.6v94.5L389.2 390.9l0.6-94.5z</Geometry>
+    <DrawingImage x:Key="F">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource FGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="FNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource FGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="FiveGeometry">M634.7 629l-327 189.7 82.2 47.1L716.3 676z M389.3 960l-81.6-47.1v-94.2l82.2 47.1z M716.3 676v94.3L389.3 960l0.6-94.2z M634.7 345.5l-81.6 47.1 82.2 47.1 81-47.1z M634.7 722.2l-81.6-47.1V392.6l82.2 47.1z M716.3 392.6v282.6l-81.6 47 0.6-282.5z M551 391.2L307.7 533.4l82.2 47.1 242.7-142.2z M389.3 674.7l-81.6-47.1v-94.2l82.2 47.1z M632.6 438.3v94.2L389.3 674.7l0.6-94.2z M389.3 204.8l-81.6 47.1 82.2 47.1 81-47.1z M389.3 581.5l-81.6-47.1V251.9l82.2 47.1z M470.9 251.9v282.5l-81.6 47.1 0.6-282.5z M632.8 64L307.7 248.1l82.2 47.1 324.5-184.1z M389.3 389.3l-81.6-47.1v-94.1l82.2 47.1z M714.4 111.1v94.2l-325.1 184 0.6-94.1z</Geometry>
+    <DrawingImage x:Key="Five">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource FiveGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="FiveNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource FiveGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="FourGeometry">M640 64.8l-85.8 49.5 86.4 49.6 85.2-49.6z M640 959.2l-85.8-49.5 0.1-795.4 86.3 49.6z M725.8 114.3v795.4L640 959.2l0.6-795.3z M554 410.9L298.2 560.5l86.3 49.5 255.3-149.5z M384 709.1l-85.8-49.5v-99.1l86.3 49.5z M639.8 460.5v99.1L384 709.1l0.5-99.1z M384 214.9l-85.8 49.5 86.3 49.5 85.3-49.5z M384 707.1l-85.8-49.5V264.4l86.3 49.5z M469.8 264.4l-0.1 393.2-85.7 49.5 0.5-393.2z</Geometry>
+    <DrawingImage x:Key="Four">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource FourGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="FourNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource FourGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="GGeometry">M685.1 509.1L598.6 559l87.1 50 85.8-50z M685.1 710.1l-86.5-49.9V559.1l87.1 49.9z M771.5 559v101.2l-86.4 49.9 0.6-101.1z M597.3 660.1L337.7 810.8l87.1 49.9 259-150.7z M424.2 960.6l-86.5-49.9v-99.9l87.1 49.9z M683.8 710v99.9L424.2 960.6l0.6-99.9z M338.9 310.3l-86.4 49.9 87 49.9 85.9-49.9z M338.9 909.1l-86.4-49.9v-499l87 49.9z M425.4 360.2v499l-86.5 49.9 0.6-499z M597.5 63.4l-258.6 147 87.1 49.9 258-147z M425.4 360.1l-86.5-49.9v-99.8l87.1 49.9z M684 113.3v99.9L425.4 360.1l0.6-99.8z M685.1 409.2l-173 100.4 87 49.9 172.4-100.4z M598.5 659.3l-86.4-49.9v-99.8l87 49.9z M771.5 459.1V559l-173 100.3 0.6-99.8z</Geometry>
+    <DrawingImage x:Key="G">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource GGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="GNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource GGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="HGeometry">M685.2 62.7l-86.3 49.8 86.9 49.8 85.7-49.8z M685.2 860.9l-86.3-49.8V112.5l86.9 49.8z M771.5 112.5v698.6l-86.3 49.8 0.6-698.6z M598.5 369.4L252.6 571.5l86.9 49.8 345.3-202.1z M338.9 721l-86.3-49.9v-99.6l86.9 49.8z M684.8 419.2v99.7L338.9 721l0.6-99.7z M338.8 163.1l-86.3 49.8 86.9 49.8 85.7-49.8z M338.8 961.3l-86.3-49.8V212.9l86.9 49.8z M425.1 212.9v698.6l-86.3 49.8 0.6-698.6z</Geometry>
+    <DrawingImage x:Key="H">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource HGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="HNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource HGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="IGeometry">M598.1 64.2l-86 49.7 86.6 49.7 85.5-49.7z M598.1 263l-86-49.7v-99.4l86.6 49.7z M684.2 113.9v99.5L598.1 263l0.6-99.4z M598.1 661.1l-86 49.7 86.6 49.7 85.5-49.7z M598.1 859.9l-86-49.7v-99.4l86.6 49.7z M684.2 710.8v99.4l-86.1 49.7 0.6-99.4z M511.9 113.5l-86 49.7 86.6 49.7 85.5-49.7z M511.7 909.4l-86.1-49.7 0.3-696.5 86.6 49.7z M598 163.2l-0.2 696.5-86.1 49.7 0.8-696.5z M425.9 761l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 959.8l-86.1-49.7v-99.4l86.6 49.7z M511.9 810.7v99.4l-86 49.7 0.5-99.4z M425.9 163.6l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 362.5l-86.1-49.7v-99.4l86.6 49.6z M511.9 213.3v99.5l-86 49.7 0.5-99.5z</Geometry>
+    <DrawingImage x:Key="I">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource IGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="INormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource IGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="JGeometry">M612.5 200.3L525 250.8l88.1 50.5 86.9-50.5z M612.5 806.8L525 756.3l0.1-505.5 88 50.5z M700 250.8v505.5l-87.5 50.5 0.6-505.5z M524.8 655.3l-263 154.1 88.1 50.5 262.4-154.1z M349.3 960.9l-87.5-50.5v-101l88.1 50.5z M612.3 705.8v101l-263 154.1 0.6-101z M674.7 63.1L413.8 213.6l88.1 50.5 260.3-150.5z M501.3 365.1l-87.5-50.5v-101l88.1 50.5z M762.2 113.6v101.1L501.3 365.1l0.6-101z M349.3 656.5l-87.5 50.6 88.1 50.5 86.8-50.5z M349.3 858.6l-87.5-50.5v-101l88.1 50.5z M436.7 707.1v101l-87.4 50.5 0.6-101z</Geometry>
+    <DrawingImage x:Key="J">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource JGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="JNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource JGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="KGeometry">M557.4 433L466 485.8l92 52.7 90.8-52.7z M649.1 802.6l-91.4-52.7L466 485.8l92 52.7z M648.8 485.8l91.7 264.1-91.4 52.7L558 538.5z M466.3 380L283 485.8l92 52.7 182.6-105.7z M374.4 644L283 591.3V485.8l92 52.7z M557.6 432.8v105.5L374.4 644l0.6-105.5z M374.6 115.9l-91.3 52.8 92 52.7 90.7-52.7z M374.6 961l-91.3-52.8V168.7l92 52.7z M466 168.7v739.6L374.6 961l0.7-739.6z M649.6 63l-91.4 52.8 92 52.7 90.8-52.7z M557.9 432.7L466.5 380l91.7-264.2 92 52.7z M741 115.8L649.2 380l-91.3 52.7 92.3-264.2z</Geometry>
+    <DrawingImage x:Key="K">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource KGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="KNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource KGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="LGeometry">M657.5 567.6L271 792.1l97.5 55.8 385.7-224.5z M367.8 959.7L271 903.8V792.1l97.5 55.8z M754.2 623.4v111.8L367.8 959.7l0.7-111.8z M366.5 64.3l-96.7 55.9 97.4 55.9 96.1-55.9z M366.5 959.1l-96.7-55.9v-783l97.4 55.9z M463.3 120.2v783.1l-96.8 55.8 0.7-783z</Geometry>
+    <DrawingImage x:Key="L">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource LGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="LNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource LGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="MGeometry">M597.6 64.3l-86 49.7 86.6 49.7 85.5-49.7z M770.4 661.3l-86.1-49.6L511.6 114l86.6 49.7z M683.7 114l172.7 497.7-86 49.6-172.2-497.6z M597.1 64.5l-86 49.7 86.6 49.7 85.5-49.7z M511.6 808.6l-86-49.6 85.5-644.8 86.6 49.7z M683.2 114.2L597.6 759l-86 49.6 86.1-644.7z M253.6 162.3l-86 49.7 86.6 49.6 85.5-49.6z M511.9 808.6l-86-49.7L167.6 212l86.6 49.6z M339.7 212L598 759l-86.1 49.6-257.7-547z M254 162.3L168 212l86.6 49.6L340 212z M254 959.7L168 910V212l86.6 49.6z M340 212v698l-86 49.7 0.6-698.1z</Geometry>
+    <DrawingImage x:Key="M">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource MGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="MNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource MGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="NGeometry">M635.2 61.6l-81.9 47.3 82.5 47.3 81.3-47.3z M635.2 820.9l-81.9-47.3V108.9l82.5 47.3z M717.1 108.9v664.7l-81.9 47.3 0.6-664.7z M388.8 203.1l-81.9 47.3 82.5 47.3 81.3-47.3z M634.8 818.5l-81.9-47.3-246-520.8 82.5 47.3z M470.7 250.4l246 520.9-81.9 47.2-245.4-520.8z M389.1 203.1l-81.9 47.3 82.5 47.3 81.3-47.3z M389.1 962.4l-81.9-47.3V250.4l82.5 47.3z M471 250.4v664.7l-81.9 47.3 0.6-664.7z</Geometry>
+    <DrawingImage x:Key="N">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource NGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="NNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource NGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="NineGeometry">M633.9 64.3l-81.7 47.2 82.3 47.2 81.1-47.2z M633.9 820.6l-81.7-47.1v-662l82.3 47.2z M715.6 111.5v662l-81.7 47.1 0.6-661.9z M552 675.8L308.4 818.2l82.3 47.1 243-142.4z M390.1 959.7l-81.7-47.2v-94.3l82.3 47.1z M633.7 722.9v94.4L390.1 959.7l0.6-94.4z M552 393.9L308.4 536.3l82.3 47.1 243-142.4z M390.1 677.8l-81.7-47.2v-94.3l82.3 47.1z M633.7 441v94.4L390.1 677.8l0.6-94.4z M390.1 298.6l-81.7 47.2 82.3 47.1 81.1-47.1z M390.1 675.8l-81.7-47.1V345.8l82.3 47.1z M471.8 345.8v282.9l-81.7 47.1 0.6-282.9z M552 110L308.4 250.5l82.3 47.2 243-140.5z M390.1 392l-81.7-47.1v-94.3l82.3 47.1z M633.7 157.2v94.4L390.1 392l0.6-94.3z</Geometry>
+    <DrawingImage x:Key="Nine">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource NineGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="NineNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource NineGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="OGeometry">M740.1 116.9L649 169.5l91.8 52.6 90.5-52.6z M740.1 643.6L649 591V169.5l91.8 52.6z M831.3 169.5V591l-91.2 52.6 0.7-421.5z M649.1 591.2L283.9 802.1l91.8 52.6 364.6-210.9z M375.1 960l-91.2-52.6 0.1-105.3 91.7 52.6z M740.3 643.8v105.3L375.1 960l0.6-105.3z M649.1 64L283.9 274.9l91.8 52.6 364.6-210.9z M375.1 432.8l-91.2-52.6 0.1-105.3 91.7 52.6z M740.3 116.6v105.3L375.1 432.8l0.6-105.3z M283.9 380.5l-91.2 52.6 91.8 52.6 90.5-52.6z M283.9 907.2l-91.2-52.6V433.1l91.8 52.6z M375 433.1v421.5l-91.1 52.6 0.6-421.5z</Geometry>
+    <DrawingImage x:Key="O">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource OGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ONormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource OGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="OneGeometry">M598.1 661.1l-86 49.7 86.6 49.7 85.5-49.7z M598.1 859.9l-86-49.7v-99.4l86.6 49.7z M684.2 710.8v99.4l-86.1 49.7 0.6-99.4z M511.9 113.5l-86 49.7 86.6 49.7 85.5-49.7z M511.7 909.4l-86.1-49.7 0.3-696.5 86.6 49.7z M598 163.2l-0.2 696.5-86.1 49.7 0.8-696.5z M425.9 761l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 959.8l-86.1-49.7v-99.4l86.6 49.7z M511.9 810.7v99.4l-86 49.7 0.5-99.4z M425.9 163.6l-86.1 49.7 86.6 49.7 85.5-49.7z M425.9 362.5l-86.1-49.7v-99.4l86.6 49.6z M511.9 213.3v99.5l-86 49.7 0.5-99.5z</Geometry>
+    <DrawingImage x:Key="One">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource OneGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="OneNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource OneGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="PGeometry">M594.5 441.6L347.8 583.2l82.3 47.2 246.1-141.7z M429.5 724.7l-81.7-47.2v-94.3l82.3 47.2z M676.2 488.7v94.4L429.5 724.7l0.6-94.3z M676.2 110.8l-81.7 47.1 82.2 47.1 81.1-47.1z M676.2 488.4l-81.7-47.1V157.9l82.2 47.1z M757.8 157.9v283.4l-81.6 47.1 0.5-283.4z M593.7 63.6L347.8 205.2l82.3 47.2 245.3-141.6z M429.5 346.7l-81.7-47.2v-94.3l82.3 47.2z M675.4 110.8v94.3L429.5 346.7l0.6-94.3z M347.8 299.6l-81.6 47.1 82.2 47.2 81.1-47.2z M347.8 960.4l-81.6-47.2V346.8l82.2 47.1z M429.5 346.7v566.6l-81.7 47.1 0.6-566.5z</Geometry>
+    <DrawingImage x:Key="P">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource PGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="PNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource PGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="QGeometry">M684.3 109.4l-86 49.6 86.6 49.6 85.3-49.6z M684.3 909.4l-86-49.6 0.1-700.8 86.5 49.6z M770.2 159v700.8l-85.9 49.6 0.6-700.8z M598.3 561.8L253.9 760.7l86.6 49.6 343.7-198.8z M339.9 909.6l-86-49.7 0.1-99.2 86.5 49.6z M684.2 611.5v99.2L339.9 909.6l0.6-99.3z M598.3 64.7L253.9 263.6l86.6 49.6 343.7-198.8z M339.9 412.5l-86-49.7 0.1-99.2 86.5 49.6z M684.2 114.4v99.2L339.9 412.5l0.6-99.3z M253.9 363.1l-86 49.7 86.6 49.6 85.3-49.6z M253.9 859.8l-86-49.6V412.8l86.6 49.6z M339.8 412.8v397.4l-85.9 49.6 0.6-397.4z M770.1 760.8l-85.9 49.6 86.5 49.6 85.4-49.6z M770.1 959.3l-85.9-49.7v-99.2l86.5 49.6z M856.1 810.4v99.3l-86 49.6 0.6-99.3z</Geometry>
+    <DrawingImage x:Key="Q">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource QGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="QNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource QGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="RGeometry">M593.1 535.7L512 582.5l81.7 46.9 80.6-46.9z M674.7 770l-81.2-46.9L512 582.5l81.7 46.9z M674.3 582.5l81.6 140.6-81.2 46.9-81-140.6z M593 440.1L349.2 582.5l81.7 46.9 243.2-142.5z M430.3 723.1l-81.1-46.9v-93.7l81.7 46.9z M674.1 486.9v93.8L430.3 723.1l0.6-93.7z M674.1 112.9L593 159.7l81.7 46.9 80.6-46.9z M674.1 488.3L593 441.4V159.7l81.7 46.9z M755.3 159.7v281.7l-81.2 46.9 0.6-281.7z M593 64.3L349.2 206.8l81.7 46.8 243.2-142.4z M430.3 347.4l-81.1-46.9v-93.7l81.7 46.8z M674.1 111.2v93.7L430.3 347.4l0.6-93.8z M349.3 299.1l-81.2 46.8 81.8 46.9 80.6-46.9z M349.3 959.7l-81.2-46.9V345.9l81.8 46.9z M430.5 345.9v566.9l-81.2 46.9 0.6-566.9z</Geometry>
+    <DrawingImage x:Key="R">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource RGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="RNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource RGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="SGeometry">M634.5 440.8l-81.6 47.1 82.2 47.2 81.1-47.2z M634.5 724.3l-81.6-47.1V487.9l82.2 47.2z M716.2 487.9v189.3l-81.7 47.1 0.6-189.2z M635.8 348.8l-327 188.1L391 584l326.4-188z M390.4 678.3l-81.6-47.2v-94.2L391 584z M717.4 396v94.2l-327 188.1 0.6-94.3z M553 676.9L306.6 818.5l82.1 47.1 246-141.6z M388.2 959.8l-81.6-47.1v-94.2l82.1 47.1z M634.7 724v94.3L388.2 959.8l0.5-94.2z M634.5 64.2L389.2 205l82.2 47.1 244.8-140.8z M470.9 346.4l-81.7-47.2V205l82.2 47.1z M716.2 111.3v94.2L470.9 346.4l0.5-94.3z M390.4 299.9L308.8 347l82.2 47.1 81-47.1z M390.4 583.4l-81.6-47.2V347l82.2 47.1z M472 347v189.3l-81.6 47.1 0.6-189.3z</Geometry>
+    <DrawingImage x:Key="S">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource SGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="SNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource SGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="SevenGeometry">M640.2 64.3l-85.9 49.6 86.5 49.6 85.3-49.6z M640.2 959.7l-85.9-49.6V113.9l86.5 49.6z M726.1 113.9v796.2l-85.9 49.6 0.6-796.2z M554.1 114.4L297.9 262.1l86.5 49.6L639.9 164z M383.8 410.9l-85.9-49.6v-99.2l86.5 49.6z M639.9 164v99.2L383.8 410.9l0.6-99.2z</Geometry>
+    <DrawingImage x:Key="Seven">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource SevenGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="SevenNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource SevenGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="SixGeometry">M634 346.1l-81.7 47.2 82.3 47.2 81.1-47.2z M634 818.9l-81.7-47.2V393.3l82.3 47.2z M715.7 393.3v378.5L634 818.9l0.6-378.4z M552 675.9l-163.7 96.8 82.3 47.2 163.2-96.8z M470.1 914.3l-81.8-47.2v-94.4l82.3 47.2z M633.8 723.1v94.4l-163.7 96.8 0.5-94.4z M552 393.8L308.3 536.3l82.3 47.2L633.8 441z M390 677.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441v94.4L390 677.9l0.6-94.4z M390 298.5l-81.7 47.2 82.3 47.2 81.1-47.2z M390 960l-81.7-47.2V345.7l82.3 47.2z M471.7 345.7v567.1L390 960l0.6-567.1z M634 64L308.3 250.4l82.3 47.1 325.1-186.3z M390 391.9l-81.7-47.2v-94.3l82.3 47.1z M715.7 111.2v94.4L390 391.9l0.6-94.4z</Geometry>
+    <DrawingImage x:Key="Six">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource SixGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="SixNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource SixGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="TGeometry">M546.5 158.2l-99.1 57.2 99.8 57.2 98.4-57.2z M546.5 960.9l-99.1-57.2V215.4l99.8 57.2z M645.6 215.4v688.3l-99.1 57.2 0.7-688.3z M710.9 63.1L214 349.6l99.8 57.2L810 120.3z M313.1 521.3L214 464V349.6l99.8 57.2z M810 120.3v114.5L313.1 521.3l0.7-114.5z</Geometry>
+    <DrawingImage x:Key="T">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource TGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="TNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource TGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="ThreeGeometry">M634 64.1l-81.8 47.2 82.3 47.1 81.2-47.1z M634 820.8l-81.8-47.2 0.1-662.3 82.2 47.1z M715.7 111.3v662.3L634 820.8l0.5-662.4z M552 675.9L308.3 818.4l82.3 47.2 243.2-142.5z M390 959.9l-81.7-47.2v-94.3l82.3 47.2z M633.8 723.1v94.4L390 959.9l0.6-94.3z M552 393.8L308.3 536.3l82.3 47.2L633.8 441z M390 677.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441v94.4L390 677.9l0.6-94.4z M552 109.8L308.3 250.4l82.3 47.2L633.8 157z M390 392l-81.7-47.2v-94.4l82.3 47.2z M633.8 157v94.4L390 392l0.6-94.4z</Geometry>
+    <DrawingImage x:Key="Three">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource ThreeGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ThreeNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource ThreeGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="TwoGeometry">M634.1 631.2L308.2 819.5l82.3 47.2 325.3-188.3z M389.9 961.2L308.2 914v-94.5l82.3 47.2z M715.8 678.4v94.4L389.9 961.2l0.6-94.5z M389.9 583.5l-81.7 47.2 82.3 47.2 81.2-47.2z M389.9 961.2L308.2 914V630.7l82.3 47.2z M471.7 630.7V914l-81.8 47.2 0.6-283.3z M634.1 62.8L552.3 110l82.3 47.3 81.2-47.3z M634.1 535.9l-81.8-47.2V110.1l82.3 47.2z M715.8 110v378.7l-81.7 47.2 0.5-378.6z M552.1 394.7L308.2 537.3l82.3 47.2 243.3-142.6z M389.9 678.9l-81.7-47.2v-94.4l82.3 47.2z M633.8 441.9v94.5L389.9 678.9l0.6-94.4z M552.1 110.5L308.2 251.2l82.3 47.2 243.3-140.7z M389.9 392.8l-81.7-47.2v-94.4l82.3 47.2z M633.8 157.7v94.5L389.9 392.8l0.6-94.4z</Geometry>
+    <DrawingImage x:Key="Two">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource TwoGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="TwoNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource TwoGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="UGeometry">M694.1 65.6l-91 52.6 91.6 52.5 90.4-52.5z M694.1 697l-91-52.6V118.2l91.6 52.5z M785.1 118.2v526.3l-91 52.5 0.6-526.3z M603.1 644.4L329.9 800.7l91.7 52.6L694.1 697z M420.9 958.4l-91-52.6V800.7l91.7 52.6z M694.1 697v105.1L420.9 958.4l0.7-105.1z M329.9 164.8l-91 52.6 91.7 52.6 90.3-52.6z M329.9 907.7l-91-52.6V217.4l91.7 52.6z M420.9 217.4v637.7l-91 52.6 0.7-637.7z</Geometry>
+    <DrawingImage x:Key="U">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource UGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="UNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource UGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="VGeometry">M616.1 661.4l-103.3 59.7 104 59.7 102.6-59.7z M616.1 900.1l-103.3-59.7V721.1l104 59.7z M719.4 721.1v119.4l-103.3 59.6 0.7-119.3z M512.6 721.2l-103.3 59.7 104.1 59.6L616 780.9z M512.6 959.9l-103.3-59.7V780.9l104.1 59.6z M616 780.9v119.3l-103.4 59.7 0.8-119.4z M822.1 64.1l-103.4 59.7 104.1 59.7 102.6-59.7z M616.1 780.6L512.7 721l206-597.2 104.1 59.7z M925.4 123.8L719.4 721l-103.3 59.6 206.7-597.1z M201.9 184L98.6 243.6l104 59.7 102.7-59.7z M512.6 840l-103.3-59.6L98.6 243.7l104 59.6z M305.3 243.6l310.6 536.8L512.6 840l-310-536.7z</Geometry>
+    <DrawingImage x:Key="V">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource VGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="VNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource VGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="WGeometry">M727.9 66l-86.5 49.9 87.1 49.9 85.9-49.9z M643.6 800.3l-86.5-49.9 84.3-634.5 87.1 49.9z M814.4 115.9L730 750.4l-86.4 49.9 84.9-634.5z M560 463.5l-85.9 49.6 86.5 49.5 85.2-49.5z M645.9 809.7L560 760.2l-85.9-247.1 86.5 49.5z M645.8 513.1l85.9 247.1-85.8 49.5-85.3-247.1z M557.3 463l-88.1 50.9 88.7 50.9 87.6-50.9z M386 956.3l-88.2-50.9L469.2 514l88.7 50.8z M645.5 513.9L474.1 905.4 386 956.3l171.9-391.5z M297.8 213.2l-88.2 50.9 88.8 50.9 87.6-50.9z M386 958l-88.2-50.9-88.2-643 88.8 50.9z M386 264.1l88.1 643.1L386 958l-87.6-643z</Geometry>
+    <DrawingImage x:Key="W">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource WGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="WNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource WGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="XGeometry">M563 482.4L459.8 542l104 59.6L666.3 542z M666.3 900.1L563 840.5 459.8 542l104 59.6z M666.3 542l103.3 298.5-103.3 59.6-102.5-298.5z M563.7 362.9l-103.3 59.6 104 59.6L667 422.5z M563.7 601.3l-103.3-59.6V422.5l104 59.6z M667 422.5l-0.1 119.2-103.2 59.6 0.7-119.2z M460.3 542.1l-103.2 59.6 104 59.6 102.5-59.6z M355.3 960.2l-103.2-59.6 105-298.9 104 59.6z M563.6 601.7l-105 298.9-103.3 59.6 105.8-298.9z M460.3 422.6l-103.2 59.6L461 541.8l102.6-59.6z M460.3 661l-103.2-59.6V482.2L461 541.8z M563.6 482.2v119.3L460.3 661l0.7-119.2z M668.7 63.8l-103.3 59.6 104 59.7 102.5-59.7z M563.7 481.9l-103.3-59.6 105-298.8 104 59.6z M771.9 123.4l-105 299-103.2 59.5 105.7-298.8z M357 123.6l-103.2 59.6 103.9 59.6 102.6-59.6z M460.3 541.3L357 481.7 253.8 183.2l103.9 59.6z M460.3 183.2l103.2 298.5-103.2 59.6-102.6-298.5z</Geometry>
+    <DrawingImage x:Key="X">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource XGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="XNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource XGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="YGeometry">M556.3 448.4l-88.3 51 88.9 51 87.8-51z M556.3 958.9l-88.3-51V499.4l88.9 51z M644.7 499.4v408.5l-88.4 51 0.6-408.5z M689.2 65.1l-88.3 51 88.9 51 87.7-51z M600.2 524.3l-88.4-51 89.1-357.2 88.9 51z M777.5 116.1l-89 357.2-88.3 51 89.6-357.2z M334.8 167.5l-88.3 51 88.9 51 87.7-51z M511.7 575.1l-88.3-51-176.9-305.6 88.9 51z M423.1 218.5l177 305.6-88.4 51-176.3-305.6z</Geometry>
+    <DrawingImage x:Key="Y">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource YGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="YNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource YGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="ZGeometry">M648.3 592L284.9 801.7l91.5 52.4 362.7-209.7z M375.7 959l-90.8-52.4V801.7l91.5 52.4z M739.1 644.4v104.9L375.7 959l0.7-104.9z M648.4 170.1l-90.8 52.4 91.4 52.4 90.2-52.4z M375.6 852.9l-90.8-52.5 272.8-577.9 91.4 52.4z M739.2 222.5L466.4 800.4l-90.8 52.5 273.4-578z M648.3 65L284.9 274.7l91.5 52.5 362.7-209.8z M375.7 432l-90.8-52.4V274.7l91.5 52.5z M739.1 117.4v104.9L375.7 432l0.7-104.8z</Geometry>
+    <DrawingImage x:Key="Z">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource ZGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ZNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource ZGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <Geometry x:Key="ZeroGeometry">M634 64.1l-81.8 47.2 82.3 47.1 81.2-47.1z M634 820.8l-81.8-47.2 0.1-662.3 82.2 47.1z M715.7 111.3v662.3L634 820.8l0.5-662.4z M552 675.9l-163.7 96.7 82.3 47.2 163.2-96.7z M470.1 914.2L388.3 867v-94.4l82.3 47.2z M633.8 723.1v94.4l-163.7 96.7 0.5-94.4z M390 298.5l-81.7 47.2 82.3 47.2 81.2-47.2z M390 959.9l-81.7-47.2v-567l82.3 47.2z M471.8 345.7l-0.1 567.1-81.7 47.1 0.6-567z M552 109.8L308.3 250.4l82.3 47.2L633.8 157z M390 392l-81.7-47.2v-94.4l82.3 47.2z M633.8 157v94.4L390 392l0.6-94.4z</Geometry>
+    <DrawingImage x:Key="Zero">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource Green500ColorStyle}"
+                                 Geometry="{StaticResource ZeroGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <DrawingImage x:Key="ZeroNormal">
+        <DrawingImage.Drawing>
+            <DrawingGroup>
+                <GeometryDrawing Brush="{StaticResource AssistSolidColorBrushStyle}"
+                                 Geometry="{StaticResource ZeroGeometry}" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
 </ResourceDictionary>

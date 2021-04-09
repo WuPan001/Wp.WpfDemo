@@ -6,228 +6,223 @@
     <members>
         <member name="T:HandyControl.Properties.Langs.Lang">
             <summary>
-              一个强类型的资源类，用于查找本地化的字符串等。
+              A strongly-typed resource class, for looking up localized strings, etc.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ResourceManager">
             <summary>
-              返回此类使用的缓存的 ResourceManager 实例。
+              Returns the cached ResourceManager instance used by this class.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Culture">
             <summary>
-              重写当前线程的 CurrentUICulture 属性
-              重写当前线程的 CurrentUICulture 属性。
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.All">
             <summary>
-              查找类似 所有 的本地化字符串。
+              Looks up a localized string similar to 全部.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Am">
             <summary>
-              查找类似 上午 的本地化字符串。
+              Looks up a localized string similar to 上午.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Cancel">
             <summary>
-              查找类似 取消 的本地化字符串。
-            </summary>
-        </member>
-        <member name="P:HandyControl.Properties.Langs.Lang.CannotRegisterCompositeCommandInItself">
-            <summary>
-              查找类似 无法自注册复合命令 的本地化字符串。
-            </summary>
-        </member>
-        <member name="P:HandyControl.Properties.Langs.Lang.CannotRegisterSameCommandTwice">
-            <summary>
-              查找类似 不能注册同一命令两次 的本地化字符串。
+              Looks up a localized string similar to 取消.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Clear">
             <summary>
-              查找类似 清空 的本地化字符串。
+              Looks up a localized string similar to 清空.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Close">
             <summary>
-              查找类似 关闭 的本地化字符串。
+              Looks up a localized string similar to 关闭.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.CloseAll">
             <summary>
-              查找类似 关闭所有 的本地化字符串。
+              Looks up a localized string similar to 关闭所有.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.CloseOther">
             <summary>
-              查找类似 关闭其他 的本地化字符串。
+              Looks up a localized string similar to 关闭其他.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Confirm">
             <summary>
-              查找类似 确定 的本地化字符串。
+              Looks up a localized string similar to 确定.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ErrorImgPath">
             <summary>
-              查找类似 错误的图片路径 的本地化字符串。
+              Looks up a localized string similar to 错误的图片路径.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ErrorImgSize">
             <summary>
-              查找类似 非法的图片尺寸 的本地化字符串。
+              Looks up a localized string similar to 非法的图片尺寸.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Find">
             <summary>
-              查找类似 查找 的本地化字符串。
+              Looks up a localized string similar to 查找.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.FormatError">
             <summary>
-              查找类似 格式错误 的本地化字符串。
+              Looks up a localized string similar to 格式错误.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval10m">
             <summary>
-              查找类似 间隔10分钟 的本地化字符串。
+              Looks up a localized string similar to 间隔10分钟.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval1h">
             <summary>
-              查找类似 间隔1小时 的本地化字符串。
+              Looks up a localized string similar to 间隔1小时.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval1m">
             <summary>
-              查找类似 间隔1分钟 的本地化字符串。
+              Looks up a localized string similar to 间隔1分钟.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval2h">
             <summary>
-              查找类似 间隔2小时 的本地化字符串。
+              Looks up a localized string similar to 间隔2小时.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval30m">
             <summary>
-              查找类似 间隔30分钟 的本地化字符串。
+              Looks up a localized string similar to 间隔30分钟.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval30s">
             <summary>
-              查找类似 间隔30秒 的本地化字符串。
+              Looks up a localized string similar to 间隔30秒.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Interval5m">
             <summary>
-              查找类似 间隔5分钟 的本地化字符串。
+              Looks up a localized string similar to 间隔5分钟.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.IsNecessary">
             <summary>
-              查找类似 不能为空 的本地化字符串。
+              Looks up a localized string similar to 不能为空.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Jump">
             <summary>
-              查找类似 跳转 的本地化字符串。
+              Looks up a localized string similar to 跳转.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.LangComment">
             <summary>
-              查找类似 查找类似 {0} 的本地化字符串。 的本地化字符串。
+              Looks up a localized string similar to 查找类似 {0} 的本地化字符串。.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Miscellaneous">
             <summary>
-              查找类似 杂项 的本地化字符串。
+              Looks up a localized string similar to 杂项.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.NextPage">
             <summary>
-              查找类似 下一页 的本地化字符串。
+              Looks up a localized string similar to 下一页.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.No">
             <summary>
-              查找类似 否 的本地化字符串。
+              Looks up a localized string similar to 否.
+            </summary>
+        </member>
+        <member name="P:HandyControl.Properties.Langs.Lang.NoData">
+            <summary>
+              Looks up a localized string similar to 暂无数据.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.OutOfRange">
             <summary>
-              查找类似 不在范围内 的本地化字符串。
+              Looks up a localized string similar to 不在范围内.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.PageMode">
             <summary>
-              查找类似 页面模式 的本地化字符串。
+              Looks up a localized string similar to 页面模式.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Pm">
             <summary>
-              查找类似 下午 的本地化字符串。
+              Looks up a localized string similar to 下午.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.PngImg">
             <summary>
-              查找类似 PNG图片 的本地化字符串。
+              Looks up a localized string similar to PNG图片.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.PreviousPage">
             <summary>
-              查找类似 上一页 的本地化字符串。
+              Looks up a localized string similar to 上一页.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ScrollMode">
             <summary>
-              查找类似 滚动模式 的本地化字符串。
+              Looks up a localized string similar to 滚动模式.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Tip">
             <summary>
-              查找类似 提示 的本地化字符串。
+              Looks up a localized string similar to 提示.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.TooLarge">
             <summary>
-              查找类似 过大 的本地化字符串。
+              Looks up a localized string similar to 过大.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.TwoPageMode">
             <summary>
-              查找类似 双页模式 的本地化字符串。
+              Looks up a localized string similar to 双页模式.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Unknown">
             <summary>
-              查找类似 未知 的本地化字符串。
+              Looks up a localized string similar to 未知.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.UnknownSize">
             <summary>
-              查找类似 未知大小 的本地化字符串。
+              Looks up a localized string similar to 未知大小.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.Yes">
             <summary>
-              查找类似 是 的本地化字符串。
+              Looks up a localized string similar to 是.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ZoomIn">
             <summary>
-              查找类似 放大 的本地化字符串。
+              Looks up a localized string similar to 放大.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.Lang.ZoomOut">
             <summary>
-              查找类似 缩小 的本地化字符串。
+              Looks up a localized string similar to 缩小.
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.LangProvider.All">
             <summary>
-              查找类似 所有 的本地化字符串。
+              查找类似 全部 的本地化字符串。
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.LangProvider.Am">
@@ -238,16 +233,6 @@
         <member name="P:HandyControl.Properties.Langs.LangProvider.Cancel">
             <summary>
               查找类似 取消 的本地化字符串。
-            </summary>
-        </member>
-        <member name="P:HandyControl.Properties.Langs.LangProvider.CannotRegisterCompositeCommandInItself">
-            <summary>
-              查找类似 无法自注册复合命令 的本地化字符串。
-            </summary>
-        </member>
-        <member name="P:HandyControl.Properties.Langs.LangProvider.CannotRegisterSameCommandTwice">
-            <summary>
-              查找类似 不能注册同一命令两次 的本地化字符串。
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.LangProvider.Clear">
@@ -345,6 +330,11 @@
               查找类似 查找类似 {0} 的本地化字符串。 的本地化字符串。
             </summary>
         </member>
+        <member name="P:HandyControl.Properties.Langs.LangProvider.Miscellaneous">
+            <summary>
+              查找类似 杂项 的本地化字符串。
+            </summary>
+        </member>
         <member name="P:HandyControl.Properties.Langs.LangProvider.NextPage">
             <summary>
               查找类似 下一页 的本地化字符串。
@@ -353,6 +343,11 @@
         <member name="P:HandyControl.Properties.Langs.LangProvider.No">
             <summary>
               查找类似 否 的本地化字符串。
+            </summary>
+        </member>
+        <member name="P:HandyControl.Properties.Langs.LangProvider.NoData">
+            <summary>
+              查找类似 暂无数据 的本地化字符串。
             </summary>
         </member>
         <member name="P:HandyControl.Properties.Langs.LangProvider.OutOfRange">
@@ -427,7 +422,7 @@
         </member>
         <member name="F:HandyControl.Properties.Langs.LangKeys.All">
             <summary>
-              查找类似 所有 的本地化字符串。
+              查找类似 全部 的本地化字符串。
             </summary>
         </member>
         <member name="F:HandyControl.Properties.Langs.LangKeys.Am">
@@ -438,16 +433,6 @@
         <member name="F:HandyControl.Properties.Langs.LangKeys.Cancel">
             <summary>
               查找类似 取消 的本地化字符串。
-            </summary>
-        </member>
-        <member name="F:HandyControl.Properties.Langs.LangKeys.CannotRegisterCompositeCommandInItself">
-            <summary>
-              查找类似 无法自注册复合命令 的本地化字符串。
-            </summary>
-        </member>
-        <member name="F:HandyControl.Properties.Langs.LangKeys.CannotRegisterSameCommandTwice">
-            <summary>
-              查找类似 不能注册同一命令两次 的本地化字符串。
             </summary>
         </member>
         <member name="F:HandyControl.Properties.Langs.LangKeys.Clear">
@@ -545,6 +530,11 @@
               查找类似 查找类似 {0} 的本地化字符串。 的本地化字符串。
             </summary>
         </member>
+        <member name="F:HandyControl.Properties.Langs.LangKeys.Miscellaneous">
+            <summary>
+              查找类似 杂项 的本地化字符串。
+            </summary>
+        </member>
         <member name="F:HandyControl.Properties.Langs.LangKeys.NextPage">
             <summary>
               查找类似 下一页 的本地化字符串。
@@ -553,6 +543,11 @@
         <member name="F:HandyControl.Properties.Langs.LangKeys.No">
             <summary>
               查找类似 否 的本地化字符串。
+            </summary>
+        </member>
+        <member name="F:HandyControl.Properties.Langs.LangKeys.NoData">
+            <summary>
+              查找类似 暂无数据 的本地化字符串。
             </summary>
         </member>
         <member name="F:HandyControl.Properties.Langs.LangKeys.OutOfRange">
@@ -703,16 +698,6 @@
         <member name="F:HandyControl.Controls.StatusSwitchElement.HideUncheckedElementProperty">
             <summary>
                 是否隐藏元素
-            </summary>
-        </member>
-        <member name="F:HandyControl.Controls.TitleElement.TitlePlacementProperty">
-            <summary>
-                标题对齐方式
-            </summary>
-        </member>
-        <member name="F:HandyControl.Controls.TitleElement.TitleWidthProperty">
-            <summary>
-                标题宽度
             </summary>
         </member>
         <member name="T:HandyControl.Controls.RegularItemsControl">
@@ -3299,9 +3284,98 @@
         </member>
         <member name="M:HandyControl.Tools.WindowHelper.SetWindowToForeground(System.Windows.Window)">
             <summary>
-            让窗口激活作为前台最上层窗口
+                让窗口激活作为前台最上层窗口
             </summary>
             <param name="window"></param>
+        </member>
+        <member name="M:HandyControl.Tools.WindowHelper.TouchDragMove(System.Windows.Window)">
+            <summary>
+                开始使用触摸拖动窗口，在触摸抬起后自动结束
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_ASYNCWINDOWPOS">
+            <summary>
+                If the calling thread and the thread that owns the window are attached to different input queues, the system posts
+                the request to the thread that owns the window. This prevents the calling thread from blocking its execution while
+                other threads process the request.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_DEFERERASE">
+            <summary>
+                Prevents generation of the WM_SYNCPAINT message.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_DRAWFRAME">
+            <summary>
+                Draws a frame (defined in the window's class description) around the window.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_FRAMECHANGED">
+            <summary>
+                Applies new frame styles set using the SetWindowLong function. Sends a WM_NCCALCSIZE message to the window, even if
+                the window's size is not being changed. If this flag is not specified, WM_NCCALCSIZE is sent only when the window's
+                size is being changed.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_HIDEWINDOW">
+            <summary>
+                Hides the window.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOACTIVATE">
+            <summary>
+                Does not activate the window. If this flag is not set, the window is activated and moved to the top of either the
+                topmost or non-topmost group (depending on the setting of the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOCOPYBITS">
+            <summary>
+                Discards the entire contents of the client area. If this flag is not specified, the valid contents of the client
+                area are saved and copied back into the client area after the window is sized or repositioned.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOMOVE">
+            <summary>
+                Retains the current position (ignores X and Y parameters).
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOOWNERZORDER">
+            <summary>
+                Does not change the owner window's position in the Z order.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOREDRAW">
+            <summary>
+                Does not redraw changes. If this flag is set, no repainting of any kind occurs. This applies to the client area,
+                the nonclient area (including the title bar and scroll bars), and any part of the parent window uncovered as a
+                result of the window being moved. When this flag is set, the application must explicitly invalidate or redraw any
+                parts of the window and parent window that need redrawing.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOREPOSITION">
+            <summary>
+                Same as the SWP_NOOWNERZORDER flag.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOSENDCHANGING">
+            <summary>
+                Prevents the window from receiving the WM_WINDOWPOSCHANGING message.
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOSIZE">
+            <summary>
+                Retains the current size (ignores the cx and cy parameters).
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_NOZORDER">
+            <summary>
+                Retains the current Z order (ignores the hWndInsertAfter parameter).
+            </summary>
+        </member>
+        <member name="F:HandyControl.Tools.Interop.InteropValues.WindowPositionFlags.SWP_SHOWWINDOW">
+            <summary>
+                Displays the window.
+            </summary>
         </member>
         <member name="T:HandyControl.Tools.RegexJudgment">
             <summary>

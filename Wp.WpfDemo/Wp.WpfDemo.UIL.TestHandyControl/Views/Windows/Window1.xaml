@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:vm="clr-namespace:Wp.WpfDemo.UIL.TestHandyControl.ViewModels.Windows"
         xmlns:local="clr-namespace:Wp.WpfDemo.UIL.TestHandyControl.Views.Windows"
         mc:Ignorable="d"
         Title="Window1"
@@ -18,6 +19,9 @@
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
+    <Window.DataContext>
+        <vm:WindowVM />
+    </Window.DataContext>
     <Grid>
         <Grid>
             <!--<hc:AnimationPath Data="{DynamicResource GithubGeometry}"
@@ -112,6 +116,10 @@
                                            Margin="0,16,0,0"
                                            PasswordChar="❤" />
                             </StackPanel>
+                            <Button Height="50"
+                                    Width="100"
+                                    FontSize="24"
+                                    Command="{Binding ScreenShotCmd}">截图</Button>
                         </StackPanel>
                     </StackPanel>
                 </hc:TabItem>

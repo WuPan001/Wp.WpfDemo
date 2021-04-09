@@ -34,3 +34,15 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\Wp.
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\ca-ES\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\pl\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\pt-BR\HandyControl.resources.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\CommonServiceLocator.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\System.Windows.Interactivity.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestHandyControl\obj\Debug\GeneratedInternalTypeHelper.g.cs

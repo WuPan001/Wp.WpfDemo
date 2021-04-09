@@ -17,4 +17,3 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.d
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.Properties.Resources.resources
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.csproj.GenerateResource.cache
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.Model\obj\Debug\Wp.WpfDemo.Model.csprojAssemblyReference.cache

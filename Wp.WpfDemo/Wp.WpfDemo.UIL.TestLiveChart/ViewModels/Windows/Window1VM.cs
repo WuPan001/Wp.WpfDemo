@@ -62,9 +62,9 @@ namespace Wp.WpfDemo.UIL.TestLiveChart.ViewModels.Windows
 
         public Window1VM()
         {
-            UnqualifiedProductCount = new ChartValues<int>() { 15, 20 };
+            UnqualifiedProductCount = new ChartValues<int>() { 15 };
             //UnqualifiedProductCount.Add(12);
-            QualifiedProductCount = new ChartValues<int>() { 33, 12 };
+            QualifiedProductCount = new ChartValues<int>() { 33 };
             //QualifiedProductCount.Add(30);
             PointLabel = chartPoint => $"{chartPoint.Y}";
             SeriesCollection = new SeriesCollection

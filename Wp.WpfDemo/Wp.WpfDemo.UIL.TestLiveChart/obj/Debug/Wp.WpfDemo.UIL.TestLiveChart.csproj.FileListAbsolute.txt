@@ -31,3 +31,4 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.Wpf
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Views\Windows\Window1.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Views\Windows\Window1.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\Wp.WpfDemo.UIL.TestLiveChart.csproj.CopyComplete
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestLiveChart\obj\Debug\GeneratedInternalTypeHelper.g.cs

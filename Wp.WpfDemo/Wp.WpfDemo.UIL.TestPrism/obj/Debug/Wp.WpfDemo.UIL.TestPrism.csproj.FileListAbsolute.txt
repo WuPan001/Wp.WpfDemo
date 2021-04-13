@@ -22,11 +22,9 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\bin\Debug\System.Thr
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\bin\Debug\Unity.Abstractions.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\bin\Debug\Unity.Container.pdb
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.csprojAssemblyReference.cache
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\MainWindow.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\App.g.cs
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism_MarkupCompile.cache
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism_MarkupCompile.lref
-D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\MainWindow.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.g.resources
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.Properties.Resources.resources
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.csproj.GenerateResource.cache
@@ -34,3 +32,6 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.csproj.CopyComplete
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.exe
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Wp.WpfDemo.UIL.TestPrism.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Views\Windows\MainWindow.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\Views\Windows\MainWindow.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL.TestPrism\obj\Debug\GeneratedInternalTypeHelper.g.cs

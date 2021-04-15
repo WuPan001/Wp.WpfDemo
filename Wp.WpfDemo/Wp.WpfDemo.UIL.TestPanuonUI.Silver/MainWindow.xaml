@@ -1,0 +1,24 @@
+﻿<Window x:Class="Wp.WpfDemo.UIL.TestPanuonUI.Silver.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        xmlns:local="clr-namespace:Wp.WpfDemo.UIL.TestPanuonUI.Silver"
+        mc:Ignorable="d"
+        Title="MainWindow"
+        Height="450"
+        Width="800">
+    <Grid>
+        <TabControl Height="30"
+                    Width="200">
+            <!-- pu:TabControlHelper.ItemHeight="30"
+                    pu:TabControlHelper.CanRemove="True"-->
+            <TabItem Header="Option1">
+                <StackPanel></StackPanel>
+            </TabItem>
+            <TabItem Header="Option2" />
+            <TabItem Header="Option3" />
+        </TabControl>
+    </Grid>
+</Window>

@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wp.WpfDemo.UIL.TestLiveChar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wp.WpfDemo.UIL.TestPrism", "Wp.WpfDemo.UIL.TestPrism\Wp.WpfDemo.UIL.TestPrism.csproj", "{7E732066-D617-4DAE-BE84-0F95BDA36C3A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wp.WpfDemo.UIL.TestPanuonUI.Silver", "Wp.WpfDemo.UIL.TestPanuonUI.Silver\Wp.WpfDemo.UIL.TestPanuonUI.Silver.csproj", "{4D9A87DD-D564-4372-93AF-CD0E83D50370}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{7E732066-D617-4DAE-BE84-0F95BDA36C3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E732066-D617-4DAE-BE84-0F95BDA36C3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E732066-D617-4DAE-BE84-0F95BDA36C3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D9A87DD-D564-4372-93AF-CD0E83D50370}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D9A87DD-D564-4372-93AF-CD0E83D50370}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D9A87DD-D564-4372-93AF-CD0E83D50370}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D9A87DD-D564-4372-93AF-CD0E83D50370}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

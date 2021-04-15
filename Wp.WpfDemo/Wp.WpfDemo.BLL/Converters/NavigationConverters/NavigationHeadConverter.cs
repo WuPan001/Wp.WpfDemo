@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Windows.Data;
 using Wp.Helpers;
+using Wp.Helpers.Helpers;
 using Wp.WpfDemo.Model.Enums;
 
 namespace Wp.WpfDemo.BLL.Converters.NavigationConverters

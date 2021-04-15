@@ -30,11 +30,11 @@
         </ResourceDictionary>
     </Page.Resources>
     <Border Style="{StaticResource  PageBorderStyle}">
-        <hc:TabControl IsAnimationEnabled="True"
-                       ShowCloseButton="True"
-                       IsDraggable="True"
-                       IsTabFillEnabled="True"
-                       Margin="20">
+        <hc:TabControl  Style="{StaticResource TabControlInLine}"
+                        IsAnimationEnabled="True"
+                        IsDraggable="True"
+                        IsTabFillEnabled="True"
+                        Margin="20">
             <hc:TabItem Header="Image.Clip">
                 <hc:SimplePanel Background="{DynamicResource RegionBrush}">
                     <Image Source="/Resources/Naruto0.jpg"
@@ -81,7 +81,7 @@
                 </materialDesign:PopupBox>
             </hc:TabItem>
             <hc:TabItem Header="Drawer抽屉"></hc:TabItem>
-            <hc:TabItem Header="TabItem5">
+            <hc:TabItem Header="RadioButton">
                 <StackPanel Background="White">
                     <RadioButton IsChecked="{Binding TestRadioButton ,Mode=TwoWay, Converter={StaticResource radioButtonConverter},ConverterParameter=0}"
                                  Content="参数1" />
@@ -140,7 +140,23 @@
                 </StackPanel>
             </hc:TabItem>
             <hc:TabItem Header="TabItem7">
-                <hc:SimplePanel Background="#FFE8E03F" />
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                </Grid>
             </hc:TabItem>
         </hc:TabControl>
     </Border>

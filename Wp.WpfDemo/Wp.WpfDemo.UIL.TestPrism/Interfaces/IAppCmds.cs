@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wp.WpfDemo.UIL.TestPrism.Interfaces
 {
-    internal interface IAppCommands
+    internal interface IAppCmds
     {
         CompositeCommand GetCurrentAllTimeCommand { get; }
     }

@@ -1,14 +1,14 @@
-﻿<Application x:Class="Wp.WpfDemo.UIL.TestPrism.App"
+﻿<!--<Application x:Class="Wp.WpfDemo.UIL.TestPrism.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:Wp.WpfDemo.UIL.TestPrism"
              StartupUri="Views/Windows/MainWindow.xaml">
     <Application.Resources></Application.Resources>
-</Application>
-<!--<prism:PrismApplication x:Class="Wp.WpfDemo.UIL.TestPrism.App"
+</Application>-->
+<prism:PrismApplication x:Class="Wp.WpfDemo.UIL.TestPrism.App"
                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns:prism="http://prismlibrary.com/"
                         xmlns:local="clr-namespace:Wp.WpfDemo.UIL.TestPrism">
     <Application.Resources></Application.Resources>
-</prism:PrismApplication>-->
+</prism:PrismApplication>

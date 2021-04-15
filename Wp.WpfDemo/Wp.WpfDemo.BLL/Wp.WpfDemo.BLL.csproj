@@ -92,7 +92,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
     <Reference Include="Wp.Helpers, Version=1.0.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Wp.Helpers.1.0.7.4\lib\net472\Wp.Helpers.dll</HintPath>
+      <HintPath>..\packages\Wp.Helpers.1.0.9\lib\net472\Wp.Helpers.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

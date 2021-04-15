@@ -80,6 +80,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\UserControls\GetHourTabUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Windows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -88,9 +92,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Interfaces\IAppCommands.cs" />
-    <Compile Include="ViewModels\AppCommands.cs" />
+    <Compile Include="Interfaces\IAppCmds.cs" />
+    <Compile Include="ViewModels\AppCmds.cs" />
+    <Compile Include="ViewModels\CmdSampleMoudle.cs" />
+    <Compile Include="ViewModels\UserControls\GetDayTabVM.cs" />
+    <Compile Include="ViewModels\UserControls\GetMonthTabVM.cs" />
+    <Compile Include="ViewModels\UserControls\GetTimeTabVM.cs" />
+    <Compile Include="ViewModels\UserControls\GetYearTabVM.cs" />
     <Compile Include="ViewModels\Windows\MainWindowVM.cs" />
+    <Compile Include="Views\UserControls\GetHourTabUC.xaml.cs">
+      <DependentUpon>GetHourTabUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Windows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

@@ -8,7 +8,7 @@ using Wp.WpfDemo.UIL.TestPrism.Interfaces;
 
 namespace Wp.WpfDemo.UIL.TestPrism.ViewModels
 {
-    internal class AppCommands : IAppCommands
+    internal class AppCmds : IAppCmds
     {
         public CompositeCommand GetCurrentAllTimeCommand => throw new NotImplementedException();
     }

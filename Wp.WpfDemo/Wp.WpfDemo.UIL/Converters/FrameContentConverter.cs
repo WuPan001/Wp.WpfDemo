@@ -44,26 +44,21 @@ namespace Wp.WpfDemo.UIL.Converters
             }
             else
             {
-                GetNavigationItem(item);
+                switch (item.Tag)
+                {
+                    case ENavigationItem.Home:
+                        _pagePool.Add(item, new HomePage());
+                        break;
+
+                    case ENavigationItem.ContactUs:
+                        _pagePool.Add(item, new ContactUsPage());
+                        break;
+
+                    default:
+                        _pagePool.Add(item, null);
+                        break;
+                }
                 return GetPage(item);
-            }
-        }
-
-        private void GetNavigationItem(TreeViewItem item)
-        {
-            switch (item.Tag)
-            {
-                case ENavigationItem.Home:
-                    _pagePool.Add(item, new HomePage());
-                    break;
-
-                case ENavigationItem.ContactUs:
-                    _pagePool.Add(item, new ContactUsPage());
-                    break;
-
-                default:
-                    _pagePool.Add(item, null);
-                    break;
             }
         }
     }

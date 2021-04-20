@@ -16,9 +16,9 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         Style="{DynamicResource WindowStyle}">
-    <!--<Window.DataContext>
+    <Window.DataContext>
         <vm:MainWindowVM />
-    </Window.DataContext>-->
+    </Window.DataContext>
     <Window.InputBindings>
         <KeyBinding Gesture="Ctrl+Alt+Q"
                     Command="{Binding KeyCmd}" />

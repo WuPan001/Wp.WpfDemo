@@ -11,7 +11,6 @@ namespace Wp.WpfDemo.UIL.Views.Windows
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainWindowVM();
         }
     }
 }

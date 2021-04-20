@@ -30,11 +30,10 @@
         </ResourceDictionary>
     </Page.Resources>
     <Border Style="{StaticResource  PageBorderStyle}">
-        <hc:TabControl  Style="{StaticResource TabControlInLine}"
-                        IsAnimationEnabled="True"
-                        IsDraggable="True"
-                        IsTabFillEnabled="True"
-                        Margin="20">
+        <hc:TabControl IsAnimationEnabled="True"
+                       IsDraggable="True"
+                       IsTabFillEnabled="True"
+                       Margin="20">
             <hc:TabItem Header="Image.Clip">
                 <hc:SimplePanel Background="{DynamicResource RegionBrush}">
                     <Image Source="/Resources/Naruto0.jpg"
@@ -64,7 +63,8 @@
                             Click="Button_Click" />
                 </Grid>
             </hc:TabItem>
-            <hc:TabItem Header="PopupBox">
+            <hc:TabItem Header="PopupBox"
+                        Background="White">
                 <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
                                          HorizontalAlignment="Right"
                                          VerticalAlignment="Bottom"
@@ -95,7 +95,8 @@
                 </StackPanel>
             </hc:TabItem>
             <hc:TabItem Header="TabItem6">
-                <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Vertical"
+                            Background="White">
                     <WrapPanel Background="Yellow"
                                x:Name="ChipPanel"
                                Height="300"
@@ -145,9 +146,6 @@
                         <ColumnDefinition />
                         <ColumnDefinition />
                         <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -156,6 +154,86 @@
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
+                    <TabControl Margin="10"
+                                Style="{StaticResource TabControlInLine}">
+                        <TabItem Header="选项卡1"></TabItem>
+                        <TabItem Header="选项卡2"></TabItem>
+                        <TabItem Header="选项卡3"></TabItem>
+                    </TabControl>
+                    <materialDesign:Card Grid.Row="0"
+                                         Grid.Column="1"
+                                         Margin="10"
+                                         UniformCornerRadius="3"
+                                         Background="{DynamicResource MaterialDesignBackground}">
+                        <Expander HorizontalAlignment="Stretch"
+                                  BorderBrush="White"
+                                  Foreground="Green"
+                                  IsExpanded="False"
+                                  Background="White">
+                            <Expander.Header>
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Source="/Resources/Naruto0.jpg"
+                                           Height="20"
+                                           Width="20">
+                                        <Image.Clip>
+                                            <EllipseGeometry RadiusX="10"
+                                                             RadiusY="10"
+                                                             Center="10,6" />
+                                        </Image.Clip>
+                                    </Image>
+                                    <TextBlock Text="123"
+                                               VerticalAlignment="Center" />
+                                    <TextBlock Text="2323"
+                                               VerticalAlignment="Center" />
+                                </StackPanel>
+                            </Expander.Header>
+                            <StackPanel Orientation="Vertical"
+                                        TextBlock.Foreground="{DynamicResource MaterialDesignBody}"
+                                        Margin="24,8,24,16">
+                                <TextBlock Text="Your Content" />
+                                <TextBlock Opacity=".68"
+                                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                                           TextWrapping="Wrap" />
+                            </StackPanel>
+                        </Expander>
+                    </materialDesign:Card>
+                    <StackPanel Grid.Column="2"
+                                Grid.Row="0"
+                                Orientation="Horizontal">
+                        <materialDesign:PopupBox Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock Text="test" />
+                                <Button ToolTip="GitHub"
+                                        Content="{materialDesign:PackIcon Kind=Github, Size=20}" />
+                            </StackPanel>
+                        </materialDesign:PopupBox>
+                        <TextBlock Text="test"
+                                   x:Name="TestRender"
+                                   Cursor="Hand"
+                                   FontSize="20"
+                                   VerticalAlignment="Center"
+                                   RenderTransformOrigin="0.5,0.5">
+                            <TextBlock.RenderTransform>
+                                <RotateTransform Angle="0" />
+                            </TextBlock.RenderTransform>
+                            <TextBlock.Triggers>
+                                <EventTrigger RoutedEvent="MouseEnter">
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="TestRender"
+                                                                            Storyboard.TargetProperty="RenderTransform.Angle">
+                                                <SplineDoubleKeyFrame Value="0"
+                                                                      KeyTime="0:0:0" />
+                                                <SplineDoubleKeyFrame Value="180"
+                                                                      KeyTime="0:0:0.5" />
+                                                <SplineDoubleKeyFrame Value="360"
+                                                                      KeyTime="0:0:1" />
+                                            </DoubleAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+                            </TextBlock.Triggers></TextBlock>
+                    </StackPanel>
                 </Grid>
             </hc:TabItem>
         </hc:TabControl>

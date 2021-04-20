@@ -126,3 +126,4 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\MyDrawer.baml
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\ca-ES\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\pl\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\pt-BR\HandyControl.resources.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\News\MD.baml

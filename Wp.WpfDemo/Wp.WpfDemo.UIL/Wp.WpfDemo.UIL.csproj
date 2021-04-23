@@ -163,6 +163,7 @@
     </ApplicationDefinition>
     <Compile Include="Converters\FrameContentConverter.cs" />
     <Compile Include="ViewModels\Pages\HomePageVM.cs" />
+    <Compile Include="ViewModels\UserControls\RollingNumberVM.cs" />
     <Compile Include="ViewModels\Windows\LoginWindowVM.cs" />
     <Compile Include="ViewModels\Windows\MainWindowVM.cs" />
     <Compile Include="ViewModels\Windows\WindowVMBase.cs" />
@@ -174,6 +175,9 @@
     </Compile>
     <Compile Include="Views\Pages\HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\RollingNumber.xaml.cs">
+      <DependentUpon>RollingNumber.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Windows\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -277,6 +281,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\RollingNumber.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

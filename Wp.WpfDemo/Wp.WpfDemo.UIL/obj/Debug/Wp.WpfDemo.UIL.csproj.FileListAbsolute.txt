@@ -127,3 +127,5 @@ D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\ca-ES\HandyControl.r
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\pl\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\bin\Debug\pt-BR\HandyControl.resources.dll
 D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Styles\News\MD.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\UserControls\RollingNumber.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.UIL\obj\Debug\Views\UserControls\RollingNumber.baml

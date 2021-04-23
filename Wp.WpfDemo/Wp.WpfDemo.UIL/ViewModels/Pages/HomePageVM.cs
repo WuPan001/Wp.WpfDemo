@@ -42,6 +42,14 @@ namespace Wp.WpfDemo.UIL.ViewModels.Pages
             set { chips = value; }
         }
 
+        private string _time = 0.ToString();
+
+        public string TestTime
+        {
+            get { return _time; }
+            set { _time = value; RaisePropertyChanged(); }
+        }
+
         public ICommand StepperTestCmd => new RelayCommand(() =>
         {
             var temp = EnumHelper.GetEnumItems<EAssemblyStatus>();
@@ -126,10 +134,12 @@ namespace Wp.WpfDemo.UIL.ViewModels.Pages
             else
             {
                 var cc = c as Chip;
-
                 cc.Visibility = System.Windows.Visibility.Collapsed;
                 Console.WriteLine(cc.Content);
             }
         });
+
+        public ICommand AddTimeCmd => new RelayCommand(() => Console.WriteLine(TestTime = (Convert.ToInt32(TestTime) + 1).ToString()));
+        public ICommand SubTimeCmd => new RelayCommand(() => Console.WriteLine(TestTime = (Convert.ToInt32(TestTime) - 1).ToString()));
     }
 }

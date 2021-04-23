@@ -350,6 +350,10 @@
       <Project>{bcc6ab90-f3d4-4ef5-86ee-6d9b5eea6d2f}</Project>
       <Name>Wp.WpfDemo.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Wp.WpfDemo.WpThemes\Wp.WpfDemo.WpThemes.csproj">
+      <Project>{3902405d-d7dd-4f53-b7d4-df7e760821ef}</Project>
+      <Name>Wp.WpfDemo.WpThemes</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Login.svg">

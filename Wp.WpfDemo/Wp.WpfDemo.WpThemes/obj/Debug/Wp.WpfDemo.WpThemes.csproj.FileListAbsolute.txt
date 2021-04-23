@@ -1,0 +1,13 @@
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\bin\Debug\Wp.WpfDemo.WpThemes.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\bin\Debug\Wp.WpfDemo.WpThemes.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes_MarkupCompile.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes_MarkupCompile.lref
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Themes\Generic.baml
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.g.resources
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.Properties.Resources.resources
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.csproj.GenerateResource.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.csproj.CoreCompileInputs.cache
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.dll
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.pdb
+D:\Files\Git\Wp.WpfDemo\Wp.WpfDemo\Wp.WpfDemo.WpThemes\obj\Debug\Wp.WpfDemo.WpThemes.csprojAssemblyReference.cache
